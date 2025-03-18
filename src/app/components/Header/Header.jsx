@@ -6,7 +6,7 @@ export const Header = () => (
     <header className="fixed top-0 z-20 flex flex-col justify-between w-full items-center px-8">
         <h1 className="text-2xl font-bold sr-only">Denti Dental Clinic</h1>
         <Link href="/" className="relative py-[36px]">
-            <Image src="/images/logo.PNG" alt="Denti Dental Clinic" width={250} height={250} />
+            <Image src="/images/logo.PNG" alt="Denti Dental Clinic" width={250} height={85} />
             <p className="
                 absolute
                 text-[11px]
