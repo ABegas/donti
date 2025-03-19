@@ -1,16 +1,17 @@
-import { Noto_Sans_Display, Alumni_Sans_Pinstripe } from "next/font/google";
-import "./globals.scss";
+import { Oswald, Poiret_One } from "next/font/google";
+import "./styles/tailwind.css";
+import "./styles/globals.scss";
 
-const noto = Noto_Sans_Display({
+const oswald = Oswald({
     subsets: ["latin"],
-    weight: ["400", "700"],
-    variable: "--font-noto"
+    weight: ["200", "300", "400", "500", "600", "700"],
+    variable: "--font-oswald"
 });
 
-const alumni = Alumni_Sans_Pinstripe({
+const poiret = Poiret_One({
     subsets: ["latin"],
     weight: ["400"],
-    variable: "--font-alumni"
+    variable: "--font-poiret"
 });
 
 export const metadata = {
@@ -21,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${alumni.variable} ${noto.variable} font-noto`}>
+      <body className={`${oswald.variable} ${poiret.variable} font-oswald`}>
         {children}
       </body>
     </html>

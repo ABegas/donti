@@ -1,11 +1,11 @@
-import { Header } from "./components/Header/Header";
-import { Hero } from "./components/Home/Hero";
+import Header from "./components/Header/Header";
+import HeroVideo from "./components/Home/HeroVideo";
 
 export default function Home() {
   return (
     <div className="">
         <Header />
-        <Hero />
+        <HeroVideo />
     </div>
   )
 }

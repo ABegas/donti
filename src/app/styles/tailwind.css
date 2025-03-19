@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --color-brand: #ced0ab;
+}
+
+@theme {
+    /*Colors*/
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-brand: var(--color-brand);
+
+    /*Fonts*/
+    --font-oswald: var(--font-oswald);
+    --font-poiret: var(--font-poiret);
+
+    /*Shadows*/
+    --drop-shadow-text: 0 0 20px rgba(0, 0, 0, 0.5);
+    --inset-shadow-btn: inset 0px 0px 0px 2px var(--color-brand);
+
+    /*Breakpoints*/
+    --breakpoint-xl: 1400px;
+}
