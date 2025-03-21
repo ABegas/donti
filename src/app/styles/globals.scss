@@ -3,6 +3,7 @@
 h1, .title-h1 {
     font-size: 42px;
     line-height: 1.2;
+    font-family: var(--font-oswald);
 
     @include mq($md) {
         font-size: 64px;
@@ -12,9 +13,58 @@ h1, .title-h1 {
 h2, .title-h2 {
     font-size: 32px;
     line-height: 1.2;
+    font-family: var(--font-oswald);
 
     @include mq($md) {
         font-size: 42px;
+    }
+}
+
+h3, .title-h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-family: var(--font-oswald);
+
+    @include mq($md) {
+        font-size: 32px;
+    }
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 16px;
+
+    @include mq($md) {
+        font-size: 18px;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.o-decor {
+    position: relative;
+    padding-bottom: 20px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    &--black {
+        &:after {
+            background-color: #000;
+        }
     }
 }
 
@@ -43,12 +93,12 @@ h2, .title-h2 {
     padding-block: 10px;
     color: #fff;
     transition: all 0.2s ease-in-out;
-
+    
     @include mq($md) {
         font-size: 20px;
     }
 
-    &::before {
+    &:before {
         content: '';
         position: absolute;
         top: 0;
@@ -56,12 +106,20 @@ h2, .title-h2 {
         width: 100%;
         height: 100%;
         border: 1px solid #fff;
-        z-index: -1;
+        
         transition: all 0.2s ease-in-out;
     }
     
     &:hover {
         color: var(--color-brand);
-        box-shadow: inset 0 0 0 3px var(--color-brand);
+        box-shadow: inset 0 0 0 1px var(--color-brand);
+
+        &:before{
+            top: -5px;
+            left: -5px;
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            border-color: var(--color-brand);
+        }
     }
 }
