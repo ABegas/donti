@@ -1,6 +1,7 @@
 import { Oswald, Poiret_One } from "next/font/google";
 import "./styles/tailwind.css";
 import "./styles/globals.scss";
+import Header from "./components/Header/Header";
 
 const oswald = Oswald({
     subsets: ["latin"],
@@ -22,7 +23,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${poiret.variable} font-oswald`}>
+      <body className={`${oswald.variable} ${poiret.variable} font-poiret bg-brand`}>
+        <Header />
         {children}
       </body>
     </html>

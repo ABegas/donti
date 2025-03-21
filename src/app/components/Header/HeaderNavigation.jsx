@@ -1,9 +1,9 @@
 import Link from "next/link";
-import {HeaderNavigationLinks} from "../../content/header";
-import '../../styles/header-navigation.scss';
+import {HeaderNavigationLinks} from "@content/header";
+import '@styles/header-navigation.scss';
 
-export const HeaderNavigation = () => (
-    <nav>
+export const HeaderNavigation = ({isSticky}) => (
+    <nav className="relative">
         <div className="c-menuToggle">
             <input type="checkbox" id="menuCheckbox" className="xl:hidden" />
             <span></span>
@@ -14,10 +14,9 @@ export const HeaderNavigation = () => (
                     <li key={link.id} className="px-6">
                         <Link 
                             href={link.url}
-                            className="
+                            className={`
                                 inline-block
                                 font-poiret
-                                text-[20px]
                                 border-b-[0.5px]
                                 h-[38px]
                                 xl:hover:h-[32px]
@@ -25,9 +24,11 @@ export const HeaderNavigation = () => (
                                 transition-all
                                 hover:border-black
                                 xl:text-[#fff]
+                                text-[18px]
                                 xl:hover:border-brand
                                 xl:hover:text-brand
-                            ">
+                                ${isSticky ? 'xl:text-[18px]' : 'xl:text-[20px]'}
+                            `}>
                                 <label htmlFor="menuCheckbox" className="cursor-pointer font-bold xl:font-normal">{link.title}</label>
                         </Link>
                     </li>

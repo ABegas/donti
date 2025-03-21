@@ -2,11 +2,8 @@ import Link from "next/link";
 import ArrowRight from "@public/icons/arrow-right.svg";
 
 export const CtaPrimary = ({text, link, style}) => (
-    <Link href={link} className={`cta-primary
-        
-        ${style ? style : ""}
-    `}>
-            {text}
+    <Link href={link} className={`cta-primary inline-block ${style ? style : ""}`}>
+        {text}
     </Link>            
 )
 

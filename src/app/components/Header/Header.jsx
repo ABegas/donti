@@ -1,26 +1,62 @@
-import Image from "next/image";
-import Link from "next/link";
+'use client'
+
+import { useEffect, useState } from "react";
+import Image from "next/image"
+import Link from "next/link"
 import { HeaderNavigation } from "./HeaderNavigation";
 
 const Header = () => {
+    const [isSticky, setIsSticky] = useState(false)
+
+    useEffect(() => {
+        if (window.scrollY !== 0) {
+            setIsSticky(true);
+        }
+
+        const handleScroll = () => {
+            if (window.scrollY !== 0) {
+                setIsSticky(true);
+            } else {
+                setIsSticky(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <header className="fixed top-0 z-20 flex xl:flex-col justify-between w-full items-center px-8">
-            <h1 className="text-2xl font-bold sr-only">Denti Dental Clinic</h1>
-            <Link href="/" className="relative pb-[36px] pt-[20px] xl:py-[36px] w-[180px] xl:w-[250px]">
+        <header className={`
+            fixed
+            top-0
+            z-20
+            flex
+            xl:flex-col
+            justify-between
+            w-full
+            items-center
+            px-8
+            transition-all
+            duration-400
+            ${isSticky ? 'before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-brand-dark before:opacity-[30%] backdrop-blur-xl' : ''}
+        `}>
+            <h1 className="sr-only">Donti Dental Clinic</h1>
+            <Link href="/" className={`relative pb-[26px] pt-[10px] transition-all duration-400 ${isSticky ? 'xl:py-[11px] w-[120px] xl:w-[120px]' : 'xl:py-[36px] w-[180px] xl:w-[250px]'}`}>
                 <Image src="/images/logo.PNG" alt="Denti Dental Clinic" width={250} height={85} priority={true} />
-                <p className="
+                <span className={`
                     absolute
-                    text-[11px]
-                    bottom-[24px]
-                    right-[-55px]
                     tracking-[3px]
                     text-[#ced0ab]
                     opacity-90
-                ">
+                    font-[300]
+                    transition-all
+                    duration-400
+                    ${isSticky ? 'bottom-[12px] right-[-90px] xl:right-[-140px] text-[10px]' : 'bottom-[15px] right-[-55px] text-[11px]'}
+                `}>
                     By Dr. Konstantinos
-                </p>
+                </span>
             </Link>
-            <HeaderNavigation />
+            <HeaderNavigation isSticky={isSticky} />
         </header>
     )
 }

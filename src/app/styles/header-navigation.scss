@@ -4,7 +4,7 @@
     .c-menuToggle {
         display: block;
         position: fixed;
-        top: 40px;
+        top: 27px;
         right: 32px;
         z-index: 1;
         -webkit-user-select: none;
@@ -57,7 +57,7 @@
     .c-menuToggle input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
-      background: #232323;
+      background: var(--color-brand-dark);
     }
     
     .c-menuToggle input:checked ~ span:nth-last-child(3) {
@@ -74,7 +74,7 @@
       max-width: 420px;
       width: 100vw;
       height: 100vh;
-      margin: -67px 0 0 -50px;
+      margin: -53px 0 0 -50px;
       padding: 50px;
       padding-top: 125px;
       box-sizing: border-box;

@@ -1,6 +1,6 @@
 $md: 768px;
 $lg: 1024px;
-$xl: 1400px;
+$xl: 1399px;
 
 @mixin mq($breakpoint) {
     @media screen and (min-width: $breakpoint) {
