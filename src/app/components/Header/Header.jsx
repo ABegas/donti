@@ -45,13 +45,13 @@ const Header = () => {
                 <Image src="/images/logo.PNG" alt="Denti Dental Clinic" width={250} height={85} priority={true} />
                 <span className={`
                     absolute
-                    tracking-[3px]
+                    tracking-[2px]
                     text-[#ced0ab]
                     opacity-90
                     font-[300]
                     transition-all
                     duration-400
-                    ${isSticky ? 'bottom-[12px] right-[-90px] xl:right-[-140px] text-[10px]' : 'bottom-[15px] right-[-55px] text-[11px]'}
+                    ${isSticky ? 'bottom-[16px] xl:bottom-[18px] right-[-90px] xl:right-[-145px] text-[8px] xl:text-[10px]' : 'bottom-[16px] xl:bottom-[25px] right-[-55px] text-[8px] xl:text-[10px]'}
                 `}>
                     By Dr. Konstantinos
                 </span>

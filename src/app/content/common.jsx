@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid'
+
 export const AboutDonti = {
     title: 'Welcome to Donti Dental Clinic',
     text: `<p>Located in the heart of the City of London, just steps from Bank Underground Station (Exit 6), 
@@ -30,3 +32,22 @@ export const AboutDoctor = {
     btnText: 'Learn More',
     btnSrc: '/doctor'
 }
+
+
+export const FeedbacksContent = [
+    {
+        id: uuidv4(),
+        name: 'Maria L.',
+        text: `I've always been nervous about going to the dentist, but the team here completely changed that. They were gentle, explained everything clearly, and made me feel comfortable the entire time. Highly recommended!`
+    },
+    {
+        id: uuidv4(),
+        name: 'James T.',
+        text: `From the moment I walked in, I felt welcomed and well cared for. The clinic is spotless, the technology is modern, and the staff are incredibly professional. My teeth have never looked better!`
+    },
+    {
+        id: uuidv4(),
+        name: 'Sophie K.',
+        text: `Excellent service from start to finish. I had a full cleaning and whitening done, and I couldn’t be happier with the results. I actually look forward to my next visit!`
+    }
+]

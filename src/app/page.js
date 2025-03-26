@@ -1,17 +1,25 @@
 'use client'
 
+//libs
 import dynamic from 'next/dynamic'
 import { useEffect } from 'react'
 import AOS from 'aos'
 import { useMediaQuery } from 'react-responsive'
 import 'aos/dist/aos.css'
 
-import BannerText from "./components/Home/BannerText";
-import HeroVideo from "./components/Home/HeroVideo";
-import { AboutDonti } from "./content/common";
+//Content
+import { AboutDonti } from "@content/common";
+
+//Components
+import BannerText from "@components/Home/BannerText";
+import HeroVideo from "@components/Home/HeroVideo";
+
+import TreatmentsList from '@components/Treatments/TreatmentsList'
+import Feedbacks from './components/Global/Feedbacks'
 
 export default function Home() {
-    const BannerDoctor = dynamic(() => import('./components/Home/BannerDoctor'), { ssr: false });
+    const BannerDoctor = dynamic(() => import('@components/Home/BannerDoctor'), { ssr: false });
+    const ParalaxBanner = dynamic(() => import('@components/Global/ParalaxBanner'), { ssr: false });
     const isMobile = useMediaQuery({query: '(max-width: 768px)'})
 
     useEffect(() => {
@@ -22,7 +30,7 @@ export default function Home() {
     return (
         <>
             <HeroVideo />
-            <div data-aos="fade-up" data-aos-offset="30" className="relative md:max-w-[80%] mx-auto z-10 md:translate-y-[-120px]">
+            <div data-aos="fade-up" data-aos-offset="30" className="relative md:max-w-[86%] mx-auto z-10 md:translate-y-[-120px]">
                 <BannerText 
                     style="dark"
                     title={AboutDonti.title} 
@@ -31,9 +39,17 @@ export default function Home() {
                     imgAlt={AboutDonti.imgAlt}
                     buttonText="Learn More"
                     buttonLink={AboutDonti.btnSrc}
+                    textPosition='left'
                 /> 
             </div>
             <BannerDoctor isMobile={isMobile} />
+            <TreatmentsList />
+            <div className="md:translate-y-[-180px]">
+                <ParalaxBanner />
+            </div>
+            <div className="bg-brand-dark md:translate-y-[-180px]">
+                <Feedbacks />
+            </div>
         </>
     )
 }
