@@ -16,7 +16,7 @@
 
     /*Fonts*/
     --font-oswald: var(--font-oswald);
-    --font-poiret: var(--font-poiret);
+    --font-poppins: var(--font-poppins);
 
     /*Shadows*/
     --drop-shadow-text: 0 0 20px rgba(0, 0, 0, 0.5);

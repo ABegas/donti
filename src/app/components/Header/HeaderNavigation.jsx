@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {HeaderNavigationLinks} from "@content/header";
-import '@styles/header-navigation.scss';
+import '@styles/header-navigation-mobile.scss';
 
 export const HeaderNavigation = ({isSticky}) => (
     <nav className="relative">
@@ -16,7 +16,7 @@ export const HeaderNavigation = ({isSticky}) => (
                             href={link.url}
                             className={`
                                 inline-block
-                                font-poiret
+                                font-poppins
                                 border-b-[0.5px]
                                 h-[38px]
                                 xl:hover:h-[32px]
@@ -27,9 +27,9 @@ export const HeaderNavigation = ({isSticky}) => (
                                 text-[18px]
                                 xl:hover:border-brand
                                 xl:hover:text-brand
-                                ${isSticky ? 'xl:text-[18px]' : 'xl:text-[20px]'}
+                                lg:text-[16px]
                             `}>
-                                <label htmlFor="menuCheckbox" className="cursor-pointer font-bold xl:font-normal">{link.title}</label>
+                                <label htmlFor="menuCheckbox" className="cursor-pointer font-[200]">{link.title}</label>
                         </Link>
                     </li>
                 ))}

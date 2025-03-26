@@ -1,4 +1,4 @@
-import { Oswald, Poiret_One } from "next/font/google";
+import { Oswald, Poppins } from "next/font/google";
 import "./styles/tailwind.css";
 import "./styles/globals.scss";
 import Header from "./components/Header/Header";
@@ -9,10 +9,10 @@ const oswald = Oswald({
     variable: "--font-oswald"
 });
 
-const poiret = Poiret_One({
+const poppins = Poppins({
     subsets: ["latin"],
-    weight: ["400"],
-    variable: "--font-poiret"
+    weight: ["100", "200", "400", "600"],
+    variable: "--font-poppins"
 });
 
 export const metadata = {
@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${poiret.variable} font-poiret bg-brand`}>
+      <body className={`${oswald.variable} ${poppins.variable} font-poppins font-[200] bg-brand`}>
         <Header />
         {children}
       </body>
