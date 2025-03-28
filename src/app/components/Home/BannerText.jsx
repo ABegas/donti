@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { CtaPrimary } from "../UI/Cta";
+import { LinkPrimary } from "../UI/Cta";
 
 const BannerText = ({title, text, imgSrc, imgAlt, style, textPosition, buttonText, buttonLink}) => {
     const bannerDark = style === 'dark' ? 'bg-brand-dark text-white' : ''
@@ -27,7 +27,7 @@ const BannerText = ({title, text, imgSrc, imgAlt, style, textPosition, buttonTex
                 <div className="lg:w-[40%] md:text-[20px]">
                     <h3 className="o-decor mb-8">{title}</h3>
                     <div dangerouslySetInnerHTML={{ __html: text }} />
-                    {buttonText && <CtaPrimary text={buttonText} link={buttonLink} style='mt-[20px]' />}
+                    {buttonText && <LinkPrimary text={buttonText} link={buttonLink} style='mt-[20px]' />}
                 </div>      
             </div>
         </section>

@@ -2,6 +2,7 @@ import { Oswald, Poppins } from "next/font/google";
 import "./styles/tailwind.css";
 import "./styles/globals.scss";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const oswald = Oswald({
     subsets: ["latin"],
@@ -25,7 +26,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${oswald.variable} ${poppins.variable} font-poppins font-[200] bg-brand`}>
         <Header />
-        {children}
+            {children}
+        <Footer />
       </body>
     </html>
   );

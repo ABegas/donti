@@ -1,5 +1,12 @@
 @use 'settings' as *;
 
+html,
+body {
+    @include mq($md) {
+        height: calc(100% - 180px);
+    }
+}
+
 h1, .title-h1 {
     font-size: 42px;
     line-height: 1.2;
@@ -106,11 +113,13 @@ p {
 
 .cta-primary {
     position: relative;
+    display: inline-block;
     font-family: var(--font-poppins);
     padding-inline: 32px;
     padding-block: 10px;
     color: #fff;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
     
     @include mq($md) {
         font-size: 20px;
@@ -138,6 +147,96 @@ p {
             width: calc(100% + 10px);
             height: calc(100% + 10px);
             border-color: var(--color-brand);
+        }
+    }
+}
+
+.o-input {
+    &__wrapper {
+        position: relative;
+        margin-bottom: 36px;
+        label {
+            font-size: 24px;
+            position: absolute;
+            top: -4px;
+            left: 0;
+            transition: all 0.2s ease-in-out;
+            font-family: var(--font-oswald);
+        }
+        input,
+        select {
+            font-size: 14px;
+            width: 100%;
+            padding-inline: 8px;
+            padding-block: 8px;
+            border-bottom: 1px solid white;
+            background-color: transparent;
+
+            &:focus,
+            &:not(:placeholder-shown) {
+                outline: none;
+
+                & ~ label {
+                    top: -22px;
+                    font-size: 18px;
+                }
+            }
+        }
+        select {
+            cursor: pointer;
+            padding-top: 0;
+            padding-inline: 0;
+            font-family: var(--font-oswald);
+            font-size: 24px;
+        }
+    }
+}
+
+.o-socials {
+    a {
+        border: 1px solid transparent;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+
+        path {
+            transition: all 0.3s;
+        }
+    }
+
+    &__light {
+        a {
+            border-color: $color-brand-dark;
+        }
+
+        svg,
+        path {
+            fill: $color-brand-dark;
+        }
+    }
+
+    &__dark {
+        background: $color-brand-dark;
+
+        a {
+            border-color: white;
+
+            &:hover {
+                svg,
+                path {
+                    fill: $color-brand;
+                }
+            }
+        }
+
+        svg {
+            fill: white;
+    
+            path {
+                fill: white;
+            }
         }
     }
 }

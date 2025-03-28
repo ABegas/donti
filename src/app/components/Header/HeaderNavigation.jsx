@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {HeaderNavigationLinks} from "@content/header";
 import '@styles/header-navigation-mobile.scss';
+import SocialLinks from "../Global/SocialLinks";
 
 export const HeaderNavigation = ({isSticky}) => (
     <nav className="relative">
@@ -33,6 +34,9 @@ export const HeaderNavigation = ({isSticky}) => (
                         </Link>
                     </li>
                 ))}
+                <li className="border-t-1">
+                    <SocialLinks styles="xl:hidden gap-4" type="light" />
+                </li>
             </ul>
         </div>
     </nav>
