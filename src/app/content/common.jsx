@@ -1,4 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
+import Instagram from '@public/icons/instagram.svg'
+import Facebook from '@public/icons/facebook.svg'
+import Whatsapp from '@public/icons/whatsapp.svg'
 
 export const AboutDonti = {
     title: 'Welcome to Donti Dental Clinic',
@@ -49,5 +52,26 @@ export const FeedbacksContent = [
         id: uuidv4(),
         name: 'Sophie K.',
         text: `Excellent service from start to finish. I had a full cleaning and whitening done, and I couldn’t be happier with the results. I actually look forward to my next visit!`
+    }
+]
+
+export const SocialsLinksContent = [
+    {
+        id: uuidv4(),
+        text: 'instagram',
+        linkSrc: 'https://www.instagram.com/dontilondon',
+        iconComponent: <Instagram />
+    },
+    {
+        id: uuidv4(),
+        text: 'Facebook',
+        linkSrc: 'https://www.facebook.com/dontilondon',
+        iconComponent: <Facebook />
+    },
+    {
+        id: uuidv4(),
+        text: 'WhatsApp',
+        linkSrc: 'https://www.facebook.com/dontilondon',
+        iconComponent: <Whatsapp />
     }
 ]

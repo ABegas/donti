@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.6",
     "@svgr/webpack": "^8.1.0",
     "aos": "^2.3.4",
     "next": "15.2.3",
@@ -16,6 +17,7 @@
     "react-dom": "^19.0.0",
     "react-parallax": "^3.5.2",
     "react-responsive": "^10.0.1",
+    "resend": "^4.2.0",
     "sass": "^1.86.0",
     "uuid": "^11.1.0"
   },

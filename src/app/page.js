@@ -16,6 +16,7 @@ import HeroVideo from "@components/Home/HeroVideo";
 
 import TreatmentsList from '@components/Treatments/TreatmentsList'
 import Feedbacks from './components/Global/Feedbacks'
+import PromoMsg from './components/Global/PromoMsg'
 
 export default function Home() {
     const BannerDoctor = dynamic(() => import('@components/Home/BannerDoctor'), { ssr: false });
@@ -45,7 +46,9 @@ export default function Home() {
             <BannerDoctor isMobile={isMobile} />
             <TreatmentsList />
             <div className="md:translate-y-[-180px]">
-                <ParalaxBanner />
+                <ParalaxBanner imgSrc="/images/parallax.jpg">
+                    <PromoMsg />
+                </ParalaxBanner>
             </div>
             <div className="bg-brand-dark md:translate-y-[-180px]">
                 <Feedbacks />

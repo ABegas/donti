@@ -1,6 +1,30 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export const TreatmentsList = [
+export const TreatmentsListContent = [
+    {
+        id: uuidv4(),
+        title: 'Full Smile Makeover',
+        subtitle: `Your Dream Smile, Designed Just for You`,
+        text: `<p>If you feel self-conscious about your <strong>teeth, smile, or overall oral health</strong>, a <strong>Full Smile Makeover</strong>
+                can help you achieve the confidence you deserve. Whether you’re looking to restore function,
+                improve aesthetics, or both, we create a <strong>personalized treatment plan</strong> tailored to your unique
+                needs.</p>
+                <h4>How It Works</h4>
+                <ul>
+                    <li><span>Comprehensive Consultation</span> – Dr. Konstantinos will begin with a <strong>detailed assessment,
+                    including check-ups, X-rays, and digital scans</strong>, to understand your concerns and goals.</li>
+                    <li><span>Bespoke Treatment Plan</span> – You’ll receive a <strong>written plan outlining different options</strong>, from
+                    essential treatments to restore function and health to advanced aesthetic enhancements.</li>
+                    <li><span>Your Choice, Your Smile</span> – With Dr. Konstantinos’ guidance, you can choose the perfect
+                    combination of treatments, such as <strong>Invisalign, veneers, dental implants, whitening, or
+                    restorative work</strong>, to achieve your ideal smile.</li>
+                    <li><span>Personalized Advice</span> – Tips on brushing, flossing, and lifestyle habits to maintain your oral health.</li>
+                </ul>
+                <p>With years of expertise and a keen eye for detail, <strong>Dr. Konstantinos will ensure your results are
+                both natural-looking and long-lasting</strong>, giving you a <strong>healthy, confident smile that truly reflects
+                you!</strong></p>`,
+        imgSrc: '/images/treatment.jpg'
+    },
     {
         id: uuidv4(),
         title: 'Ceramic veneers',
@@ -47,25 +71,7 @@ export const TreatmentsList = [
     },
     {
         id: uuidv4(),
-        title: 'Teeth Whitening',
-        subtitle: `Teeth Whitening - Reveal Your Brightest Smile`,
-        text: `<p>A radiant, white smile can boost your confidence and leave a lasting impression. But over time,
-                coffee, wine, and everyday life can take their toll, dulling your teeth’s natural brilliance. Luckily,
-                our professional teeth whitening treatments can help you regain that fresh, luminous glow—safely
-                and effectively.</p>
-                <p>Philips Zoom! In-Clinic Whitening – Achieve a noticeably whiter smile in just 45 minutes with our
-                advanced light-activated treatment.</p>
-                <p>Philips Zoom! Take-Home Kit – Enjoy professional whitening results from the comfort of your
-                home with custom trays and high-quality gel.</p>
-                <p>Boutique Whitening – A premium at-home system that delivers gradual, long-lasting brightness
-                with minimal sensitivity.</p>
-                <p>Whether you're looking for a quick boost or a complete transformation, our expert whitening
-                solutions will help you smile with confidence every day!</p>`,
-        imgSrc: '/images/treatment1.jpg'
-    },
-    {
-        id: uuidv4(),
-        title: 'Porcelain Crowns & Inlays',
+        title: 'Porcelain Crowns & Bridges',
         subtitle: `Strength, Beauty & Protection`,
         text: `<p>If your tooth is damaged, weakened, or has a large filling, a porcelain crown or inlay can restore its
                 strength, function, and natural beauty.</p>
@@ -76,54 +82,6 @@ export const TreatmentsList = [
                 <p>Both options are durable, natural-looking, and long-lasting, ensuring your smile stays strong and
                 beautiful for years to come!</p>`,
         imgSrc: '/images/treatment.jpg'
-    },
-    {
-        id: uuidv4(),
-        title: 'Tooth-coloured fillings',
-        subtitle: `Seamless & Natural Protection`,
-        text: `<p>Gone are the days of noticeable metal fillings! Tooth-coloured fillings are made from high-quality
-                composite resin that blends perfectly with your natural tooth shade, making them virtually invisible.</p>
-                <p>Used to repair cavities, cracks, and minor damage, these fillings provide strong, durable, and long-
-                lasting protection while preserving your tooth’s natural structure. The result? A healthy, beautiful
-                smile—with no visible signs of treatment!</p>`,
-        imgSrc: '/images/treatment1.jpg'
-    },
-    {
-        id: uuidv4(),
-        title: 'Bridges & Dentures',
-        subtitle: `Restore Your Smile with Confidence`,
-        text: `<p>Missing teeth can affect not just your smile but also your ability to speak, eat, and feel confident.
-                That’s where bridges and dentures come in—helping you regain a natural, comfortable, and fully
-                functional smile.</p>
-                <p>Dental Bridges – A fixed solution for missing teeth, using strong, natural-looking crowns to bridge
-                the gap and restore your bite.</p>
-                <p>Dentures – A custom-made, removable option that replaces multiple missing teeth, designed for a
-                secure, comfortable fit and a beautiful smile.</p>
-                <p>Both options are tailored to blend seamlessly with your natural teeth, improving both function and
-                aesthetics. Whether you’re missing one tooth or several, we’ll help you find the perfect solution to
-                bring back your smile and confidence!</p>`,
-        imgSrc: '/images/treatment.jpg'
-    },
-    {
-        id: uuidv4(),
-        title: 'Dental Implants',
-        subtitle: `A Permanent Solution for a Confident Smile`,
-        text: `<p>Missing teeth can impact your confidence, speech, and ability to enjoy food, but dental implants
-                offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>
-                <p>Missing teeth can impact your confidence, speech, and ability to enjoy food, but dental implants
-                offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>
-                <h4>Why Choose Dental Implants?</h4>
-                <ul>
-                    <li><span>Natural Look & Feel</span> – Blends seamlessly with your smile</li>
-                    <li><span>Strong & Long-Lasting</span> – Can last a lifetime with proper care</li>
-                    <li><span>Prevents Bone Loss</span> – Stimulates the jawbone, maintaining facial structure</li>
-                    <li><span>No Damage to Other Teeth</span> – Unlike bridges, implants don’t rely on neighboring teeth</li>
-                    <li><span>Eat & Speak with Confidence</span> – No slipping, discomfort, or dietary restrictions</li>
-                </ul>
-                <p>Whether you’re missing one tooth, multiple teeth, or need full-mouth restoration, dental implants
-                provide the closest thing to getting your natural teeth back—so you can smile, eat, and live with
-                confidence!</p>`,
-        imgSrc: '/images/treatment1.jpg'
     },
     {
         id: uuidv4(),
@@ -159,45 +117,52 @@ export const TreatmentsList = [
     },
     {
         id: uuidv4(),
-        title: 'General Dental Check-Up',
-        subtitle: `The Key to a Healthy, Lasting Smile`,
-        text: `<p>Regular dental check-ups are essential for maintaining strong, healthy teeth and gums. Even if
-                you’re not experiencing any pain or issues, routine visits allow us to detect and prevent problems
-                early—saving you time, discomfort, and costly treatments in the future.</p>
-                <h4>What Happens During a Check-Up?</h4>
-                <ul>
-                    <li><span>Comprehensive Examination</span> – Comprehensive Examination</li>
-                    <li><span>Early Detection</span> – Identifying cavities, gum disease, or other concerns before they worsen.</li>
-                    <li><span>Professional Cleaning</span> – Removing plaque and tartar buildup for a fresher, healthier smile.</li>
-                    <li><span>Personalized Advice</span> – Tips on brushing, flossing, and lifestyle habits to maintain your oral health.</li>
-                </ul>
-                <p>We recommend a check-up every 6 months, but some patients may need more frequent visits.
-                Whether it’s a routine exam or addressing a specific concern, our goal is to keep your smile healthy,
-                beautiful, and problem-free for years to come!</p>`,
+        title: 'Teeth Whitening',
+        subtitle: `Teeth Whitening - Reveal Your Brightest Smile`,
+        text: `<p>A radiant, white smile can boost your confidence and leave a lasting impression. But over time,
+                coffee, wine, and everyday life can take their toll, dulling your teeth’s natural brilliance. Luckily,
+                our professional teeth whitening treatments can help you regain that fresh, luminous glow—safely
+                and effectively.</p>
+                <p>Philips Zoom! In-Clinic Whitening – Achieve a noticeably whiter smile in just 45 minutes with our
+                advanced light-activated treatment.</p>
+                <p>Philips Zoom! Take-Home Kit – Enjoy professional whitening results from the comfort of your
+                home with custom trays and high-quality gel.</p>
+                <p>Boutique Whitening – A premium at-home system that delivers gradual, long-lasting brightness
+                with minimal sensitivity.</p>
+                <p>Whether you're looking for a quick boost or a complete transformation, our expert whitening
+                solutions will help you smile with confidence every day!</p>`,
         imgSrc: '/images/treatment1.jpg'
     },
     {
         id: uuidv4(),
-        title: 'Full Smile Makeover',
-        subtitle: `Your Dream Smile, Designed Just for You`,
-        text: `<p>If you feel self-conscious about your <strong>teeth, smile, or overall oral health</strong>, a <strong>Full Smile Makeover</strong>
-                can help you achieve the confidence you deserve. Whether you’re looking to restore function,
-                improve aesthetics, or both, we create a <strong>personalized treatment plan</strong> tailored to your unique
-                needs.</p>
-                <h4>How It Works</h4>
+        title: 'Dental Implants',
+        subtitle: `A Permanent Solution for a Confident Smile`,
+        text: `<p>Missing teeth can impact your confidence, speech, and ability to enjoy food, but dental implants
+                offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>
+                <p>Missing teeth can impact your confidence, speech, and ability to enjoy food, but dental implants
+                offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>
+                <h4>Why Choose Dental Implants?</h4>
                 <ul>
-                    <li><span>Comprehensive Consultation</span> – Dr. Konstantinos will begin with a <strong>detailed assessment,
-                    including check-ups, X-rays, and digital scans</strong>, to understand your concerns and goals.</li>
-                    <li><span>Bespoke Treatment Plan</span> – You’ll receive a <strong>written plan outlining different options</strong>, from
-                    essential treatments to restore function and health to advanced aesthetic enhancements.</li>
-                    <li><span>Your Choice, Your Smile</span> – With Dr. Konstantinos’ guidance, you can choose the perfect
-                    combination of treatments, such as <strong>Invisalign, veneers, dental implants, whitening, or
-                    restorative work</strong>, to achieve your ideal smile.</li>
-                    <li><span>Personalized Advice</span> – Tips on brushing, flossing, and lifestyle habits to maintain your oral health.</li>
+                    <li><span>Natural Look & Feel</span> – Blends seamlessly with your smile</li>
+                    <li><span>Strong & Long-Lasting</span> – Can last a lifetime with proper care</li>
+                    <li><span>Prevents Bone Loss</span> – Stimulates the jawbone, maintaining facial structure</li>
+                    <li><span>No Damage to Other Teeth</span> – Unlike bridges, implants don’t rely on neighboring teeth</li>
+                    <li><span>Eat & Speak with Confidence</span> – No slipping, discomfort, or dietary restrictions</li>
                 </ul>
-                <p>With years of expertise and a keen eye for detail, <strong>Dr. Konstantinos will ensure your results are
-                both natural-looking and long-lasting</strong>, giving you a <strong>healthy, confident smile that truly reflects
-                you!</strong></p>`,
-        imgSrc: '/images/treatment.jpg'
+                <p>Whether you’re missing one tooth, multiple teeth, or need full-mouth restoration, dental implants
+                provide the closest thing to getting your natural teeth back—so you can smile, eat, and live with
+                confidence!</p>`,
+        imgSrc: '/images/treatment1.jpg'
+    },
+    {
+        id: uuidv4(),
+        title: 'Tooth-coloured fillings',
+        subtitle: `Seamless & Natural Protection`,
+        text: `<p>Gone are the days of noticeable metal fillings! Tooth-coloured fillings are made from high-quality
+                composite resin that blends perfectly with your natural tooth shade, making them virtually invisible.</p>
+                <p>Used to repair cavities, cracks, and minor damage, these fillings provide strong, durable, and long-
+                lasting protection while preserving your tooth’s natural structure. The result? A healthy, beautiful
+                smile—with no visible signs of treatment!</p>`,
+        imgSrc: '/images/treatment1.jpg'
     }
 ]
