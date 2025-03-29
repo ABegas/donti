@@ -21,7 +21,7 @@ const BannerText = ({title, text, imgSrc, imgAlt, style, textPosition, buttonTex
                     justify-between
                     ${bannerTextRight}
                 `}>
-                <div className={`lg:w-[60%] ${textPosition === 'right' ? 'shadow-[-45px_45px_0_rgba(0,0,0,0.2)]' : 'shadow-[45px_45px_0_rgba(0,0,0,0.2)]'}`}>
+                <div className={`lg:w-[60%] xl:h-[70vh] ${textPosition === 'right' ? 'shadow-[-45px_45px_0_rgba(0,0,0,0.2)]' : 'shadow-[45px_45px_0_rgba(0,0,0,0.2)]'}`}>
                     <Image src={imgSrc} width="1200" height="840" alt={imgAlt} className="w-full h-full object-cover" />
                 </div>
                 <div className="lg:w-[40%] md:text-[20px]">

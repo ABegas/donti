@@ -140,7 +140,7 @@ const ContactForm = () => {
                     className="accent-[#c7caa8] w-4 h-4"
                 />
                 <label htmlFor="agree" className="text-sm">
-                    I agree to the <a href="/privacy-policy" className="underline text-[#c7caa8]">privacy policy</a>.
+                    I agree to the <a href="/privacy-policy" className="underline">privacy policy</a>.
                 </label>
                 </div>
 

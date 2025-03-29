@@ -1,11 +1,13 @@
 import Link from "next/link"
 import ArrowRight from "@public/icons/arrow-right.svg"
 
-export const LinkPrimary = ({text, link, style}) => (
-    <Link href={link} className={`cta-primary inline-block ${style ? style : ""}`}>
-        {text}
-    </Link>            
-)
+export const LinkPrimary = ({text, link, style, external}) => {
+    return (
+        <Link href={link} className={`cta-primary ${style ? style : ""}`} target={`${external ? "_blank" : ""}`}>
+            {text}
+        </Link>            
+    )
+}
 
 export const LinkPrimaryArrow = ({text, link, style}) => (
     <Link href={link} className={`font-poppins md:text-[20px] inline-flex items-center justify-center group hover:text-brand transition ${style ? style : ""}`}>
