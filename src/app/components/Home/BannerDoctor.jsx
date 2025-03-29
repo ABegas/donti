@@ -6,7 +6,7 @@ import { LinkPrimaryArrow } from "../UI/Cta";
 
 const BannerDoctor = ({ isMobile }) => {
     return (
-        <section className="text-white bg-black shadow-[0_29px_34px_10px_rgba(0,0,0,0.3)] flex md:translate-y-[-180px] z-1 flex-col md:flex-row items-center relative w-100%  mx-auto lg:gap-[40px]">
+        <section className="text-white bg-black shadow-[0_29px_34px_10px_rgba(0,0,0,0.3)] flex z-1 flex-col md:flex-row items-center relative w-100%  mx-auto lg:gap-[40px]">
             <div data-aos={`${isMobile ? '' : 'fade-left'}`} className="md:w-[50%] md:min-w-[400px] lg:min-w-[480px] xl:min-w-[600px]">
                 <Image src={AboutDoctor.imgSrc} width={1170} height={1600} alt={AboutDoctor.imgAlt} />
             </div>

@@ -2,10 +2,7 @@
 
 //libs
 import dynamic from 'next/dynamic'
-import { useEffect } from 'react'
-import AOS from 'aos'
 import { useMediaQuery } from 'react-responsive'
-import 'aos/dist/aos.css'
 
 //Content
 import { AboutDonti } from "@content/common";
@@ -23,11 +20,6 @@ export default function Home() {
     const ParalaxBanner = dynamic(() => import('@components/Global/ParalaxBanner'), { ssr: false });
     const isMobile = useMediaQuery({query: '(max-width: 768px)'})
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, []);
-
     return (
         <>
             <HeroVideo />
@@ -43,8 +35,12 @@ export default function Home() {
                     textPosition='left'
                 /> 
             </div>
-            <BannerDoctor isMobile={isMobile} />
-            <TreatmentsList />
+            <div className="md:translate-y-[-180px]">
+                <BannerDoctor isMobile={isMobile} />
+            </div>
+            <div className="md:translate-y-[-180px]">
+                <TreatmentsList />
+            </div>
             <div className="md:translate-y-[-180px]">
                 <ParalaxBanner imgSrc="/images/parallax.jpg">
                     <PromoMsg />

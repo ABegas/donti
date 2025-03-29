@@ -81,8 +81,7 @@ const FooterGoogleMap = () => {
     } else {
         customIcon = {
             url: '/icons/marker.png', // can be local or external
-            scaledSize: new window.google.maps.Size(240, 240), // optional size
-            anchor: new window.google.maps.Point(120, 238),    // optional anchor
+            scaledSize: new window.google.maps.Size(100, 100), // optional size
         }
     } 
     

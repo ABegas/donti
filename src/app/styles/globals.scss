@@ -75,7 +75,7 @@ p {
 
     &--black {
         &:after {
-            background-color: #000;
+            background-color: $color-brand-dark;
         }
     }
 
@@ -119,10 +119,24 @@ p {
     padding-block: 10px;
     color: #fff;
     transition: all 0.2s ease-in-out;
+    text-align: center;
     cursor: pointer;
     
     @include mq($md) {
         font-size: 20px;
+
+        &:hover {
+            color: var(--color-brand);
+            box-shadow: inset 0 0 0 1px var(--color-brand);
+    
+            &:before{
+                top: -5px;
+                left: -5px;
+                width: calc(100% + 10px);
+                height: calc(100% + 10px);
+                border-color: var(--color-brand);
+            }
+        }
     }
 
     &:before {
@@ -133,21 +147,7 @@ p {
         width: 100%;
         height: 100%;
         border: 1px solid #fff;
-        
         transition: all 0.2s ease-in-out;
-    }
-    
-    &:hover {
-        color: var(--color-brand);
-        box-shadow: inset 0 0 0 1px var(--color-brand);
-
-        &:before{
-            top: -5px;
-            left: -5px;
-            width: calc(100% + 10px);
-            height: calc(100% + 10px);
-            border-color: var(--color-brand);
-        }
     }
 }
 
@@ -156,9 +156,9 @@ p {
         position: relative;
         margin-bottom: 36px;
         label {
-            font-size: 24px;
+            font-size: 18px;
             position: absolute;
-            top: -4px;
+            top: -2px;
             left: 0;
             transition: all 0.2s ease-in-out;
             font-family: var(--font-oswald);
@@ -187,7 +187,7 @@ p {
             padding-top: 0;
             padding-inline: 0;
             font-family: var(--font-oswald);
-            font-size: 24px;
+            font-size: 18px;
         }
     }
 }
@@ -198,8 +198,8 @@ p {
     }
 
     svg {
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
 
         path {
             transition: all 0.3s;
@@ -224,6 +224,7 @@ p {
             border-color: white;
 
             &:hover {
+                border-color: $color-brand;
                 svg,
                 path {
                     fill: $color-brand;

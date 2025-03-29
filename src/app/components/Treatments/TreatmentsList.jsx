@@ -4,12 +4,12 @@ import Link from 'next/link'
 
 const TreatmentsList = () => {
     return (
-        <div className="text-white bg-brand-dark md:translate-y-[-180px] px-[32px]">
-            <div className="wrapper text-center mb-[60px]" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
-                <h2 className="o-decor o-decor--center mb-[32px] title-h1 pt-[80px]">Caring for Your Smile</h2>
+        <div className="bg-brand px-[32px]">
+            <div className="wrapper text-brand-dark text-center mb-[60px]" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+                <h2 className="o-decor o-decor--black o-decor--center mb-[32px] title-h1 pt-[80px]">Caring for Your Smile</h2>
                 <div className="text-[24px] font-[100]">From routine cleanings to advanced procedures — we've got you covered.</div>
             </div>
-            <ul className="max-w-[1400px] w-full mx-auto flex justify-center gap-8 flex-wrap py-[80px]">
+            <ul className="text-white max-w-[1400px] w-full mx-auto flex justify-center gap-8 flex-wrap py-[80px]">
                 {TreatmentsListContent.map((treatment, index) => (
                     <li
                         key={treatment.id}

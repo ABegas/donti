@@ -29,12 +29,13 @@ export const HeaderNavigation = ({isSticky}) => (
                                 xl:hover:border-brand
                                 xl:hover:text-brand
                                 lg:text-[16px]
+                                xl:text-[18px]
                             `}>
                                 <label htmlFor="menuCheckbox" className="cursor-pointer font-[200]">{link.title}</label>
                         </Link>
                     </li>
                 ))}
-                <li className="border-t-1">
+                <li className="absolute bottom-0">
                     <SocialLinks styles="xl:hidden gap-4" type="light" />
                 </li>
             </ul>

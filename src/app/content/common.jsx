@@ -2,6 +2,8 @@ import { v4 as uuidv4 } from 'uuid'
 import Instagram from '@public/icons/instagram.svg'
 import Facebook from '@public/icons/facebook.svg'
 import Whatsapp from '@public/icons/whatsapp.svg'
+import Phone from '@public/icons/phone.svg'
+import Mail from '@public/icons/mail.svg'
 
 export const AboutDonti = {
     title: 'Welcome to Donti Dental Clinic',
@@ -36,22 +38,21 @@ export const AboutDoctor = {
     btnSrc: '/doctor'
 }
 
-
 export const FeedbacksContent = [
     {
         id: uuidv4(),
-        name: 'Maria L.',
-        text: `I've always been nervous about going to the dentist, but the team here completely changed that. They were gentle, explained everything clearly, and made me feel comfortable the entire time. Highly recommended!`
+        name: 'Peter McDermott',
+        text: `Had my composite bonding done here by Dr Konstantinos and Sheila very very happy with the outcome always getting compliments. Get your self down there.`
     },
     {
         id: uuidv4(),
-        name: 'James T.',
-        text: `From the moment I walked in, I felt welcomed and well cared for. The clinic is spotless, the technology is modern, and the staff are incredibly professional. My teeth have never looked better!`
+        name: 'Catherina Kyriacou',
+        text: `I had an amazing experience in Donti clinic London. I would recommend Dr.Konstantinos for his professionalism, quality of care & outstanding premises. I had composite bonding done, and many people complimented me about them. I am absolutely delighted with the end result and really couldn’t have asked for more...`
     },
     {
         id: uuidv4(),
-        name: 'Sophie K.',
-        text: `Excellent service from start to finish. I had a full cleaning and whitening done, and I couldn’t be happier with the results. I actually look forward to my next visit!`
+        name: 'Alina Putrya',
+        text: `I had a great experience in Donti clinic London. Dr. Konstantinos is very professional, and what was very important for me, taking care of the smaller details and patient’s preferences. I highly recommend him!`
     }
 ]
 
@@ -71,7 +72,19 @@ export const SocialsLinksContent = [
     {
         id: uuidv4(),
         text: 'WhatsApp',
-        linkSrc: 'https://www.facebook.com/dontilondon',
+        linkSrc: 'https://wa.me/00447384223449',
         iconComponent: <Whatsapp />
+    },
+    {
+        id: uuidv4(),
+        text: 'Call us',
+        linkSrc: 'tel:02035769700',
+        iconComponent: <Phone />
+    },
+    {
+        id: uuidv4(),
+        text: 'Mail us',
+        linkSrc: 'mailto:info@dontidentalclinic.co.uk',
+        iconComponent: <Mail />
     }
 ]
