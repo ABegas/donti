@@ -48,7 +48,7 @@ const ContactForm = () => {
                 relative
                 p-8
                 lg:p-14
-                text-white
+                text-brand
                 bg-brand-dark
                 shadow-2xl
                 before:absolute

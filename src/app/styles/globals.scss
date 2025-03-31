@@ -70,7 +70,7 @@ p {
         left: 0;
         width: 120px;
         height: 2px;
-        background-color: #fff;
+        background-color: $color-brand;
     }
 
     &--black {
@@ -117,7 +117,7 @@ p {
     font-family: var(--font-poppins);
     padding-inline: 32px;
     padding-block: 10px;
-    color: #fff;
+    color: $color-brand;
     transition: all 0.2s ease-in-out;
     text-align: center;
     cursor: pointer;
@@ -146,7 +146,7 @@ p {
         left: 0;
         width: 100%;
         height: 100%;
-        border: 1px solid #fff;
+        border: 1px solid $color-brand;
         transition: all 0.2s ease-in-out;
     }
 }
@@ -239,5 +239,33 @@ p {
                 fill: white;
             }
         }
+    }
+}
+
+.pattern-bg {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: var(--bg-url);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+    }
+}
+
+.o-content {
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-block: 24px;
     }
 }
