@@ -36,8 +36,7 @@ export const AddressInfoContent = [
         title: 'Contact Us:',
         text: `<a href="tel:020 3576 9700" target="_blank" rel="noopener noreferrer">020 3576 9700</a><br/>
                 <a href="mailto:info@dontidentalclinic.co.uk" target="_blank" rel="noopener noreferrer">info@dontidentalclinic.co.uk</a>`
-    }
-    ,
+    },
     {
         title: 'Working Hours:',
         text: `Monday – Friday: 9:00 – 17:00<br/>

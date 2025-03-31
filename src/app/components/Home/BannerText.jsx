@@ -2,7 +2,7 @@ import Image from "next/image"
 import { LinkPrimary } from "../UI/Cta";
 
 const BannerText = ({title, text, imgSrc, imgAlt, style, textPosition, buttonText, buttonLink}) => {
-    const bannerDark = style === 'dark' ? 'bg-brand-dark text-white' : ''
+    const bannerDark = style === 'dark' ? 'bg-brand-dark text-brand' : ''
     const bannerTextRight = textPosition === 'right' ? 'lg:flex-row' : 'lg:flex-row-reverse'
 
     return (

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image"
 import Link from "next/link"
-import { HeaderNavigation } from "./HeaderNavigation";
+import HeaderNavigation from "./HeaderNavigation";
 
 const Header = () => {
     const [isSticky, setIsSticky] = useState(false)
