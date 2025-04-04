@@ -1,4 +1,4 @@
-import { FeedbacksContent } from '@content/common'
+import { FeedbacksContent } from '@data/common'
 import Quotes from "@public/icons/quotes.svg"
 import { LinkPrimary } from '../UI/Cta'
 

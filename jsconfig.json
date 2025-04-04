@@ -7,7 +7,7 @@
       "@utils/*": ["utils/*"],
       "@styles/*": ["src/app/styles/*"],
       "@public/*": ["public/*"],
-      "@content/*": ["src/app/content/*"]
+      "@data/*": ["src/app/data/*"]
     }
   }
 }

@@ -1,26 +1,22 @@
-import { TreatmentsListContent } from '@content/treatments'
+import { TreatmentsListContent } from '@data/treatments'
 import Image from "next/image"
 import Link from 'next/link'
 
-const TreatmentsList = () => {
+const TreatmentsList = ({maxTileWidthDesktop = 'max-w-[23%]'}) => {
     return (
-        <div className="bg-brand px-[32px]">
-            <div className="wrapper text-brand-dark text-center mb-[60px]" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
-                <h2 className="o-decor o-decor--black o-decor--center mb-[32px] title-h1 pt-[80px]">Caring for Your Smile</h2>
-                <div className="text-[24px] font-[200]">From routine cleanings to advanced procedures — we've got you covered.</div>
-            </div>
+        <div className="px-[32px]">
             <ul className="text-brand max-w-[1400px] w-full mx-auto flex justify-center gap-8 flex-wrap py-[80px]">
                 {TreatmentsListContent.map((treatment, index) => (
                     <li
-                        key={treatment.id}
-                        className={`overflow-hidden w-full md:max-w-[47%] lg:max-w-[30%] xl:max-w-[23%] bg-black rounded-[0_60px_0_60px] h-[460px]`}
+                        key={treatment.slug}
+                        className={`overflow-hidden w-full md:max-w-[47%] xl:${maxTileWidthDesktop} bg-black rounded-[0_60px_0_60px] h-[460px]`}
                         data-aos="fade-up"
                         data-aos-offset="-100"
                         data-aos-anchor-placement="top-bottom"
                         data-aos-delay={100 * index++}
                     >
                         <Image src={treatment.imgSrc} width={600} height={600} alt={treatment.title} className="z-[-1] absolute left-0 top-0 bg-cover w-full h-full object-cover opacity-45 sepia-50" />
-                        <Link href={'#'} className="group flex flex-col justify-between h-full">
+                        <Link href={`/treatments/${treatment.slug}`} className="group flex flex-col justify-between h-full">
                             <div>
                                 <div className="
                                     relative

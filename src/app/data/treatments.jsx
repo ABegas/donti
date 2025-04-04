@@ -1,8 +1,15 @@
 import { v4 as uuidv4 } from 'uuid';
 
+export const TreatmentsPageContent = {
+    title: 'Caring for Your Smile',
+    subtitle: `From routine cleanings to advanced procedures — we've got you covered.`,
+    bannerImgSrc: '/images/treatment.jpg',
+    bgContnentImg: '/images/bg.jpg'
+}
+
 export const TreatmentsListContent = [
     {
-        id: uuidv4(),
+        slug: 'full-smile-recovery',
         title: 'Full Smile Makeover',
         subtitle: `Your Dream Smile, Designed Just for You`,
         text: `<p>If you feel self-conscious about your <strong>teeth, smile, or overall oral health</strong>, a <strong>Full Smile Makeover</strong>
@@ -23,10 +30,12 @@ export const TreatmentsListContent = [
                 <p>With years of expertise and a keen eye for detail, <strong>Dr. Konstantinos will ensure your results are
                 both natural-looking and long-lasting</strong>, giving you a <strong>healthy, confident smile that truly reflects
                 you!</strong></p>`,
-        imgSrc: '/images/treatments_list/smile_makeover.jpeg'
+        imgSrc: '/images/treatments_list/smile_makeover.jpeg',
+        url: '/treatments/full-smile-recovery'
     },
     {
         id: uuidv4(),
+        slug: 'ceramic-veneers',
         title: 'Ceramic veneers',
         subtitle: 'Transform Your Smile with Ceramic Veneers',
         text: `<p>Dreaming of a flawless smile? Ceramic veneers offer a simple yet powerful way to enhance your
@@ -41,10 +50,12 @@ export const TreatmentsListContent = [
                 <p>Whether you're looking to refine a single tooth or achieve a full smile makeover, ceramic veneers
                 provide a naturally flawless appearance, ensuring your smile looks as perfect as it feels.</p>
                 <p>Let’s create the smile you’ve always wanted—designed just for you!</p>`,
-        imgSrc: '/images/treatments_list/ceramic_veneers.jpeg'
+        imgSrc: '/images/treatments_list/ceramic_veneers.jpeg',
+        url: '/treatments/ceramic-veneers'
     },
     {
         id: uuidv4(),
+        slug: 'composite-bounding',
         title: 'Composite Bonding',
         subtitle: `Enhance Your Smile with Composite Bonding`,
         text: `<p>Composite bonding is a quick, painless, and transformative cosmetic treatment that can restore and
@@ -67,10 +78,12 @@ export const TreatmentsListContent = [
                 quirks, the final look is entirely up to you. With no drilling, no pain, and instant results, composite
                 bonding is one of the most accessible ways to achieve a more confident smile.</p>
                 <p>Book your appointment today and let Dr. Konstantinos create the perfect smile for you!</p>`,
-        imgSrc: '/images/treatments_list/smile_makeover.jpeg'
+        imgSrc: '/images/treatments_list/composite_bonding.jpeg',
+        url: '/treatments/composite-bonding'
     },
     {
         id: uuidv4(),
+        slug: 'porcelain-crowns-bridges',
         title: 'Porcelain Crowns & Bridges',
         subtitle: `Strength, Beauty & Protection`,
         text: `<p>If your tooth is damaged, weakened, or has a large filling, a porcelain crown or inlay can restore its
@@ -81,10 +94,12 @@ export const TreatmentsListContent = [
                 more of your natural tooth than a traditional filling.</p>
                 <p>Both options are durable, natural-looking, and long-lasting, ensuring your smile stays strong and
                 beautiful for years to come!</p>`,
-        imgSrc: '/images/treatments_list/porcelain_crowns.jpeg'
+        imgSrc: '/images/treatments_list/porcelain_crowns.jpeg',
+        url: '/treatments/porcelain-crowns-bridges'
     },
     {
         id: uuidv4(),
+        slug: 'invisalign-clear-aligners',
         title: 'Invisalign® Clear Aligners',
         subtitle: `The Discreet Way to a Perfect Smile`,
         text: `<p>If you’ve ever wanted straighter teeth without the hassle of metal braces, Invisalign® clear aligners
@@ -113,10 +128,12 @@ export const TreatmentsListContent = [
                 shaving or reshaping.</p>
                 <p>With Invisalign, you can get the perfect foundation for a stunning smile transformation—all while
                 keeping your treatment discreet and comfortable!</p>`,
-        imgSrc: '/images/treatments_list/invisalign.jpeg'
+        imgSrc: '/images/treatments_list/invisalign.jpeg',
+        url: '/treatments/invisalign-clear-aligners'
     },
     {
         id: uuidv4(),
+        slug: 'teeth-whitening',
         title: 'Teeth Whitening',
         subtitle: `Teeth Whitening - Reveal Your Brightest Smile`,
         text: `<p>A radiant, white smile can boost your confidence and leave a lasting impression. But over time,
@@ -131,10 +148,12 @@ export const TreatmentsListContent = [
                 with minimal sensitivity.</p>
                 <p>Whether you're looking for a quick boost or a complete transformation, our expert whitening
                 solutions will help you smile with confidence every day!</p>`,
-        imgSrc: '/images/treatments_list/teeth_whitening.jpeg'
+        imgSrc: '/images/treatments_list/teeth_whitening.jpeg',
+        url: '/treatments/teeth-whitening'
     },
     {
         id: uuidv4(),
+        slug: 'dental-implants',
         title: 'Dental Implants',
         subtitle: `A Permanent Solution for a Confident Smile`,
         text: `<p>Missing teeth can impact your confidence, speech, and ability to enjoy food, but dental implants
@@ -152,10 +171,12 @@ export const TreatmentsListContent = [
                 <p>Whether you’re missing one tooth, multiple teeth, or need full-mouth restoration, dental implants
                 provide the closest thing to getting your natural teeth back—so you can smile, eat, and live with
                 confidence!</p>`,
-        imgSrc: '/images/treatments_list/dental_implants.jpg'
+        imgSrc: '/images/treatments_list/dental_implants.jpg',
+        url: '/treatments/dental-implants'
     },
     {
         id: uuidv4(),
+        slug: 'tooth-coloured-fillings',
         title: 'Tooth-coloured fillings',
         subtitle: `Seamless & Natural Protection`,
         text: `<p>Gone are the days of noticeable metal fillings! Tooth-coloured fillings are made from high-quality
@@ -163,6 +184,7 @@ export const TreatmentsListContent = [
                 <p>Used to repair cavities, cracks, and minor damage, these fillings provide strong, durable, and long-
                 lasting protection while preserving your tooth’s natural structure. The result? A healthy, beautiful
                 smile—with no visible signs of treatment!</p>`,
-        imgSrc: '/images/treatments_list/tooth_coloured.jpeg'
+        imgSrc: '/images/treatments_list/tooth_coloured.jpeg',
+        url: '/treatments/tooth-coloured-fillings'
     }
 ]

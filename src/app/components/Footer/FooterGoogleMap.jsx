@@ -73,7 +73,7 @@ const center = {
 const FooterGoogleMap = () => {
     let customIcon = null
     const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
     })
 
     if (!isLoaded) {

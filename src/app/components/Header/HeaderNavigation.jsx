@@ -1,19 +1,25 @@
 'use client'
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { usePathname } from 'next/navigation'
-import {HeaderNavigationLinks} from "@content/header";
+import {HeaderNavigationLinks} from "@data/header";
 import '@styles/header-navigation-mobile.scss';
 import SocialLinks from "../Global/SocialLinks";
 
 
 const HeaderNavigation = ({isSticky}) => {
+    const [navOpened, setNavOpened] = useState(false)
     const pathname = usePathname()
+
+    useEffect(() => {
+        setNavOpened(false)
+    }, [pathname]);
 
     return (
         <nav className="wrapper relative">
             <div className="c-menuToggle">
-                <input type="checkbox" id="menuCheckbox" className="xl:hidden" />
+                <input type="checkbox" id="menuCheckbox" className="xl:hidden" onChange={(e) => setNavOpened(!navOpened)} checked={navOpened} />
                 <span></span>
                 <span></span>
                 <span></span>
@@ -36,13 +42,14 @@ const HeaderNavigation = ({isSticky}) => {
                                     xl:hover:text-brand
                                     lg:text-[16px]
                                     xl:text-[18px]
-                                    ${pathname === link.url ? 'border-black xl:border-brand xl:h-[32px]' : 'border-transparent'}
+                                    ${pathname.split('/')[1] === link.url.replace('/', '') ? 'border-black xl:border-brand xl:h-[32px]' : 'border-transparent'}
+                                    
                                 `}>
-                                    <label htmlFor="menuCheckbox" className="cursor-pointer font-[200]">{link.title}</label>
+                                    <label htmlFor="menuCheckbox" className="h-[38px] inline-block cursor-pointer font-[200]">{link.title}</label>
                             </Link>
                         </li>
                     ))}
-                    <li className="absolute bottom-0">
+                    <li className="fixed bottom-0">
                         <SocialLinks styles="xl:hidden gap-4" type="light" />
                     </li>
                 </ul>

@@ -1,13 +1,13 @@
 import Link from "next/link"
-import { SocialsLinksContent } from "@/app/content/common"
+import { SocialsLinksContent } from "@data/common"
 
 const SocialLinks = ({styles, type}) => {
     return (
         <ul className={`
             o-socials
             flex
-            z-10
-            rounded-[3px_0_0_3px]
+            z-100
+            md:rounded-[3px_0_0_3px]
             ${styles ? styles: ''}
             ${type && type === 'dark' ? 'o-socials__dark' : 'o-socials__light'}
         `}>
