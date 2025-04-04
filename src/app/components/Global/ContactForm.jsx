@@ -50,7 +50,7 @@ const ContactForm = () => {
                 lg:p-14
                 text-brand
                 bg-brand-dark
-                shadow-2xl
+                shadow-[0_0_15px_4px_rgba(0,0,0,0.4)]
                 before:absolute
                 before:left-[-100%]
                 before:top-0

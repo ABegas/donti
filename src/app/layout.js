@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${poppins.variable} font-poppins font-[200] bg-brand`}>
+      <body className={`${oswald.variable} ${poppins.variable} font-poppins font-[200] bg-brand text-gray-600`}>
         <Header />
             {children}
         <Footer />

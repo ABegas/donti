@@ -1,6 +1,6 @@
 'use client'
 
-import { AboutDoctor } from '@content/common'
+import { AboutDoctor } from '@data/common'
 import Image from "next/image"
 import { LinkPrimaryArrow } from "../UI/Cta";
 

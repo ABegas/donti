@@ -1,5 +1,5 @@
 import HeroBanner from '@components/Global/HeroBanner'
-import { DoctorContent } from '@content/pages'
+import { DoctorContent } from '@data/pages'
 import ContentWithBg from '@components/Global/ContentWithBg'
 
 const Doctor = () => {
@@ -9,9 +9,9 @@ const Doctor = () => {
                 imgSrc={DoctorContent.bannerImgSrc}
                 title={DoctorContent.title}
                 subtitle={DoctorContent.subtitle}
-                width={1170}
-                height={1600}
-                customSize="md:h-[900px]"
+                imgWidth={1170}
+                imgHeight={1600}
+                imgContainCustomSize="md:h-[900px]"
             />
             <ContentWithBg text={DoctorContent.text} imgSrc={DoctorContent.bgContnentImg} />
         </>

@@ -1,4 +1,4 @@
-import { AddressInfoContent } from "@/app/content/footer"
+import { AddressInfoContent } from "@data/footer"
 
 const FooterAddressInfo = () => {
     return (

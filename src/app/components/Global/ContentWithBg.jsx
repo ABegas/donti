@@ -1,12 +1,16 @@
-const ContentWithBg = ({text, imgSrc}) => {
+const ContentWithBg = ({text, imgSrc, children, maxWidth = 'max-w-[950px]'}) => {
     const bgImage = imgSrc || '/images/bg.jpg'
 
     return (
-        <div className="pattern-bg" style={{ '--bg-url': `url(${bgImage})` }}>
-            <div className="o-content max-w-[950px] m-auto p-20">
-                <div dangerouslySetInnerHTML={{__html: text}} />
+        <>
+            <div className="pattern-bg" style={{ '--bg-url': `url(${bgImage})` }}>
+                <div className={`${maxWidth} o-content m-auto py-8 md:py-20 px-8`}>
+                    {text && <div dangerouslySetInnerHTML={{__html: text}} />}
+                    {children}
+                </div>
             </div>
-        </div>
+            
+        </>
     )
 }
 

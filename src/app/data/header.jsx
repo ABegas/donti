@@ -19,7 +19,7 @@ export const HeaderNavigationLinks = [
     {
         id: uuidv4(),
         title: 'Treatments',
-        url: '/works'
+        url: '/treatments'
     },
     {
         id: uuidv4(),

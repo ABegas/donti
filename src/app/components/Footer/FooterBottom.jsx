@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Copyright, FooterUtitlityLinks } from "@/app/content/footer"
+import { Copyright, FooterUtitlityLinks } from "@data/footer"
 
 const FooterBottom = () => {
     return (
