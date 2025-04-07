@@ -120,14 +120,14 @@ const ContactForm = () => {
                         onChange={handleChange}
                     >
                         <option value="" disabled>Select treatment...</option>
-                        <option value="cleaning">Full Smile Makeover</option>
-                        <option value="whitening">Ceramic Veneers</option>
-                        <option value="implants">Composite Bonding</option>
-                        <option value="braces">Porcelain Crowns & Bridges</option>
-                        <option value="checkup">Invisalign</option>
-                        <option value="checkup">Teeth Whitening</option>
-                        <option value="checkup">Dental Implants</option>
-                        <option value="checkup">Tooth-coloured Fillings</option>
+                        <option value="Full Smile Makeover">Full Smile Makeover</option>
+                        <option value="Ceramic Veneers">Ceramic Veneers</option>
+                        <option value="Composite Bonding">Composite Bonding</option>
+                        <option value="Porcelain Crowns & Bridges">Porcelain Crowns & Bridges</option>
+                        <option value="Invisalign">Invisalign</option>
+                        <option value="Teeth Whitening">Teeth Whitening</option>
+                        <option value="Dental Implants">Dental Implants</option>
+                        <option value="Tooth-coloured Fillings">Tooth-coloured Fillings</option>
                     </select>
                 </div>
 
