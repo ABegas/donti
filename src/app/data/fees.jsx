@@ -11,19 +11,19 @@ export const FeesContent = {
 export const PackagesListContent = [
     {
       title: "Donti Natural Glow Package",
-      services: "Invisalign® + Teeth Whitening",
+      services: "Invisalign + Teeth Whitening",
       price: "£2,300",
       description: "Perfect for enhancing your natural smile with subtle whitening and alignment.",
     },
     {
       title: "Donti Signature Smile Package",
-      services: "Invisalign® + Teeth Whitening + Upper Composite Bonding",
+      services: "Invisalign + Teeth Whitening + Upper Composite Bonding",
       price: "£3,800",
       description: "Achieve a brighter, straighter smile with additional bonding for upper teeth.",
     },
     {
       title: "Donti Full Smile Package",
-      services: "Invisalign® + Teeth Whitening + Upper & Lower Composite Bonding",
+      services: "Invisalign + Teeth Whitening + Upper & Lower Composite Bonding",
       price: "£5,200",
       description: "Our most complete package for a fully enhanced and confident smile.",
     },

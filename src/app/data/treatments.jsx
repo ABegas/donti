@@ -35,26 +35,6 @@ export const TreatmentsListContent = [
     },
     {
         id: uuidv4(),
-        slug: 'ceramic-veneers',
-        title: 'Ceramic veneers',
-        subtitle: 'Transform Your Smile with Ceramic Veneers',
-        text: `<p>Dreaming of a flawless smile? Ceramic veneers offer a simple yet powerful way to enhance your
-                teeth, correcting stains, chips, misalignment, and other imperfections. These ultra-thin, custom-
-                crafted porcelain shells are designed to blend seamlessly with your natural teeth, creating a radiant
-                and confident smile.</p>
-                <h4>Why Choose Ceramic Veneers?</h4>
-                <p>Natural Aesthetics – Crafted from high-quality porcelain for a lifelike finish
-                Long-Lasting – With proper care, veneers can last 10-15 years
-                Minimally Invasive – Requires only minimal tooth preparation
-                Stain-Resistant – Maintains a bright, white smile over time.</p>
-                <p>Whether you're looking to refine a single tooth or achieve a full smile makeover, ceramic veneers
-                provide a naturally flawless appearance, ensuring your smile looks as perfect as it feels.</p>
-                <p>Let’s create the smile you’ve always wanted—designed just for you!</p>`,
-        imgSrc: '/images/treatments_list/ceramic_veneers.jpeg',
-        url: '/treatments/ceramic-veneers'
-    },
-    {
-        id: uuidv4(),
         slug: 'composite-bounding',
         title: 'Composite Bonding',
         subtitle: `Enhance Your Smile with Composite Bonding`,
@@ -83,6 +63,26 @@ export const TreatmentsListContent = [
     },
     {
         id: uuidv4(),
+        slug: 'ceramic-veneers',
+        title: 'Ceramic veneers',
+        subtitle: 'Transform Your Smile with Ceramic Veneers',
+        text: `<p>Dreaming of a flawless smile? Ceramic veneers offer a simple yet powerful way to enhance your
+                teeth, correcting stains, chips, misalignment, and other imperfections. These ultra-thin, custom-
+                crafted porcelain shells are designed to blend seamlessly with your natural teeth, creating a radiant
+                and confident smile.</p>
+                <h4>Why Choose Ceramic Veneers?</h4>
+                <p>Natural Aesthetics – Crafted from high-quality porcelain for a lifelike finish
+                Long-Lasting – With proper care, veneers can last 10-15 years
+                Minimally Invasive – Requires only minimal tooth preparation
+                Stain-Resistant – Maintains a bright, white smile over time.</p>
+                <p>Whether you're looking to refine a single tooth or achieve a full smile makeover, ceramic veneers
+                provide a naturally flawless appearance, ensuring your smile looks as perfect as it feels.</p>
+                <p>Let’s create the smile you’ve always wanted—designed just for you!</p>`,
+        imgSrc: '/images/treatments_list/ceramic_veneers.jpeg',
+        url: '/treatments/ceramic-veneers'
+    },
+    {
+        id: uuidv4(),
         slug: 'porcelain-crowns-bridges',
         title: 'Porcelain Crowns & Bridges',
         subtitle: `Strength, Beauty & Protection`,
@@ -100,7 +100,7 @@ export const TreatmentsListContent = [
     {
         id: uuidv4(),
         slug: 'invisalign-clear-aligners',
-        title: 'Invisalign® Clear Aligners',
+        title: 'Invisalign Clear Aligners',
         subtitle: `The Discreet Way to a Perfect Smile`,
         text: `<p>If you’ve ever wanted straighter teeth without the hassle of metal braces, Invisalign® clear aligners
                 offer a comfortable, nearly invisible solution. Designed for all ages, Invisalign gently and

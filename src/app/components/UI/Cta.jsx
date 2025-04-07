@@ -17,7 +17,6 @@ export const LinkPrimaryArrow = ({text, link, style, iconPosition = "right"}) =>
             font-poppins md:text-[20px]
             flex
             items-center
-            justify-center
             group
             hover:text-brand
             transition

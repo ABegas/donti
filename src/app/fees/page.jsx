@@ -13,7 +13,8 @@ export default function FeesSection() {
                 overlay={true}
                 height={'h-[25vh]'}
             />
-            <section className="py-16 px-4 md:px-8">
+            <h1 className="text-center pt-12">Fees and Pricing section will be available soon</h1>
+            {/*<section className="py-16 px-4 md:px-8">
                 <div className="max-w-5xl mx-auto text-center mb-12">
                 <h2>Our Smile Packages</h2>
                 <p className="text-gray-600 mt-4">Transparent pricing, premium care.</p>
@@ -38,7 +39,7 @@ export default function FeesSection() {
                     </div>
                 ))}
                 </div>
-            </section>
+            </section>*/}
             <h4 className=" relative max-w-[900px] text-center px-8 mx-auto my-22 before:absolute before:w-[70%] before:top-[-60px] before:translate-[-50%] before:left-[50%] before:h-[2px] before:bg-gray-600">{FeesContent.text}</h4>
         </>
     );

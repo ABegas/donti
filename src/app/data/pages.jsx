@@ -21,10 +21,9 @@ export const DoctorContent = {
             offers his dental services at a high end and relaxing premises. The clinic is installed with the latest
             dental technology, using modern equipment and techniques to give each patient the beautiful
             smile of their dreams.</p>
-            <p>"<i>Dr. Kanaridis prides himself on his compassionate nature, particularly helping nervous patients
+            <p>Dr. Kanaridis prides himself on his compassionate nature, particularly helping nervous patients
             feel at ease, and enjoys minimally invasive and ethical cosmetic dentistry. He is highly rated and
-            regarded by his patients due to his great understanding of their needs and expectations.</i>"</p>
-            <p style="text-align: right">-Sheila Dental nurse</p>`,
+            regarded by his patients due to his great understanding of their needs and expectations.</p>`,
     bannerImgSrc: '/images/doctor.jpg',
     imgAlt: 'Dt. Konstantinos Kanaridis',
     bgContnentImg: '/images/bg.jpg'
@@ -77,11 +76,21 @@ export const DontiContent = {
 export const BookingContent = {
     title: `Get started today - Book your free virtual initial consultation.`,
     subtitle: `We’re here to help with your smile. Whether you have a question, need an appointment, or just want to say hello — feel free to reach out.`,
-    text: `<h3 style="padding-bottom: 32px">Our patients come from all over the UK, including Scotland!</h3>
+    text: `<h3 style="padding-bottom: 32px">Our patients come from all over the UK!</h3>
             <p>We understand that traveling for dental treatment is a big commitment. That’s why we offer a <strong>free
             initial video consultation</strong>, helping you make an informed decision before visiting our London
             clinic</p>`,
     promoText: `FREE INITIAL CONSULTATION`,
+    bannerImgSrc: '/images/about_2.jpg',
+    imgAlt: 'Book your appointment',
+}
+
+export const PortfolioContent = {
+    title: `Real Stories, Real Smiles`,
+    subtitle: `Exceptional dental care with transparent pricing. Discover the perfect treatment plan for your smile.`,
+    text: `We also offer 12 months of 0% APR finance, making your dream smile more affordable than ever!
+            Our financing is easy to apply for, with a quick and simple eligibility check that only requires a light
+            credit check—so you can get started on your journey to a confident smile without any hassle`,
     bannerImgSrc: '/images/about_2.jpg',
     imgAlt: 'Book your appointment',
 }
