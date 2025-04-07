@@ -128,7 +128,7 @@ const ContactForm = () => {
                     </select>
                 </div>
 
-                {/* Privacy Policy Agreement */}
+                {/* Privacy Policy Agreement 
                 <div className="mb-6 flex items-center space-x-2">
                 <input
                     type="checkbox"
@@ -142,7 +142,7 @@ const ContactForm = () => {
                 <label htmlFor="agree" className="text-sm">
                     I agree to the <a href="/privacy-policy" className="underline">privacy policy</a>.
                 </label>
-                </div>
+                </div>*/}
 
                 {/* Submit */}
                 <ButtonPrimary text="Send" type="submit" style="w-full" />
