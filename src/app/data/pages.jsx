@@ -74,8 +74,8 @@ export const DontiContent = {
 }
 
 export const BookingContent = {
-    title: `Get started today - Book your free virtual initial consultation.`,
-    subtitle: `We’re here to help with your smile. Whether you have a question, need an appointment, or just want to say hello — feel free to reach out.`,
+    title: `Get started today`,
+    subtitle: `Book your free virtual initial consultation`,
     text: `<h3 style="padding-bottom: 32px">Our patients come from all over the UK!</h3>
             <p>We understand that traveling for dental treatment is a big commitment. That’s why we offer a <strong>free
             initial video consultation</strong>, helping you make an informed decision before visiting our London
