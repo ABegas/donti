@@ -20,10 +20,10 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
     
-        if (!form.agree) {
-            alert('You must agree to the privacy policy.')
-            return
-        }
+        //if (!form.agree) {
+          //  alert('You must agree to the privacy policy.')
+            //return
+        //}
     
         const res = await fetch('/api/contact', {
             method: 'POST',
@@ -120,11 +120,14 @@ const ContactForm = () => {
                         onChange={handleChange}
                     >
                         <option value="" disabled>Select treatment...</option>
-                        <option value="cleaning">Cleaning</option>
-                        <option value="whitening">Whitening</option>
-                        <option value="implants">Dental Implants</option>
-                        <option value="braces">Braces</option>
-                        <option value="checkup">Check-up</option>
+                        <option value="cleaning">Full Smile Makeover</option>
+                        <option value="whitening">Ceramic Veneers</option>
+                        <option value="implants">Composite Bonding</option>
+                        <option value="braces">Porcelain Crowns & Bridges</option>
+                        <option value="checkup">Invisalign</option>
+                        <option value="checkup">Teeth Whitening</option>
+                        <option value="checkup">Dental Implants</option>
+                        <option value="checkup">Tooth-coloured Fillings</option>
                     </select>
                 </div>
 

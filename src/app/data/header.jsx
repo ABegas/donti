@@ -14,7 +14,7 @@ export const HeaderNavigationLinks = [
     {
         id: uuidv4(),
         title: 'Real Stories, Real Smiles',
-        url: '/works'
+        url: '/portfolio'
     },
     {
         id: uuidv4(),
