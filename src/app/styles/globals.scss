@@ -1,5 +1,9 @@
 @use 'settings' as *;
 
+html {
+    scroll-padding-top: 150px
+}
+
 html,
 body {
     @include mq($md) {
@@ -260,6 +264,29 @@ p {
             }
         }
     }
+
+    &__contact {
+        display: inline-block;
+        margin-right: 15px;
+
+        a {
+            border: 1px solid $color-brand;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+    
+            path {
+                transition: all 0.3s;
+            }
+        }
+
+        svg,
+        path {
+            fill: $color-brand;
+        }
+    }
 }
 
 .pattern-bg {
@@ -287,5 +314,15 @@ p {
     h3,
     h4 {
         margin-block: 24px;
+    }
+
+    li ul {
+        list-style-type: disc;
+        margin-bottom: 24px;
+
+        li {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
     }
 }

@@ -1,6 +1,11 @@
 import { PackagesListContent, FeesContent } from "@data/fees";
 import HeroBanner from "../components/Global/HeroBanner";
 
+export const metadata = {
+    title: "Our Fees",
+    description: "Transparent pricing, premium care in Donti Dentl Clinic.",
+}
+
 export default function FeesSection() {
     return (
         <>

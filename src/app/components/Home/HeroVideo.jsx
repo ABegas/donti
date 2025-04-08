@@ -10,7 +10,7 @@ const HeroVideo = () => {
                     <div className="font-oswald text-[24px] md:text-[32px] font-thin drop-shadow-text mb-[30px]">Where Innovation Meets Exceptional Care</div>
                     <div className="flex flex-col md:flex-row justify-center px-[40px]">
                         <LinkPrimary text="Book Now" link="/booking" />
-                        <LinkPrimaryArrow text="About Us" link="/about" style="mt-4 md:mt-0 md:ml-12" />
+                        <LinkPrimaryArrow text="About Us" link="/about" style="mt-4 md:mt-0 md:ml-12 justify-center" />
                     </div>
                 </div>
                 <video src="videos/hero-video.mov" autoPlay muted loop playsInline className="absolute top-0 left-0 h-full w-full object-cover sepia-[40%]"></video>

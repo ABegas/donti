@@ -1,7 +1,11 @@
 import HeroBanner from '@components/Global/HeroBanner'
-import { TreatmentsPageContent } from '@data/treatments'
+import { TreatmentsPageContent, TreatmentsListContent } from '@data/treatments'
 import TreatmentsList from '@components/Treatments/TreatmentsList'
 import ContentWithBg from '../components/Global/ContentWithBg'
+
+export const metadata = {
+    title: "Treatments",
+}
 
 const Treatments = () => {
     return (
@@ -15,8 +19,15 @@ const Treatments = () => {
                 overlay={true}
                 height={'h-[25vh]'}
             />
-            <ContentWithBg imgSrc={TreatmentsPageContent.bgContnentImg} maxWidth="max-w-[1400px]">
-                <TreatmentsList maxTileWidthDesktop="max-w-[48%]" />
+            <ContentWithBg imgSrc={TreatmentsPageContent.bgContnentImg}>
+                <ul>
+                    {TreatmentsListContent.map((treatment) => (
+                        <li id={treatment.slug} key={treatment.slug} className="text-left my-12">
+                            <h2 className="o-decor o-decor--black">{treatment.title}</h2>
+                            <div dangerouslySetInnerHTML={{__html: treatment.text}} />
+                        </li>
+                    ))}
+                </ul>
             </ContentWithBg>
         </>
     )

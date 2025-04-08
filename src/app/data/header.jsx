@@ -8,7 +8,7 @@ export const HeaderNavigationLinks = [
     },
     {
         id: uuidv4(),
-        title: 'Why Choose Donti Dental Clinic',
+        title: 'Why Us?',
         url: '/about'
     },
     {

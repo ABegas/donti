@@ -1,4 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
+import Instagram from '@public/icons/instagram.svg'
+import Facebook from '@public/icons/facebook.svg'
+import Whatsapp from '@public/icons/whatsapp.svg'
 
 export const Copyright = {
     text: 'Copyright © 2025 Donti Dental Clinic. All Rights Reserved.'
@@ -34,7 +37,28 @@ export const AddressInfoContent = [
     },
     {
         title: 'Contact Us:',
-        text: `<a href="tel:020 3576 9700" target="_blank" rel="noopener noreferrer">020 3576 9700</a><br/>
-                <a href="mailto:info@dontidentalclinic.co.uk" target="_blank" rel="noopener noreferrer">info@dontidentalclinic.co.uk</a>`
+        text: `<span>Tel.</span>: <a href="tel:020 3576 9700" target="_blank" rel="noopener noreferrer">020 3576 9700</a><br/>
+                <span>Email</span>: <a href="mailto:info@dontidentalclinic.co.uk" target="_blank" rel="noopener noreferrer">info@dontidentalclinic.co.uk</a><br/>`
+    },
+]
+
+export const AddressInfoContentSocials = [
+    {
+        id: uuidv4(),
+        text: 'instagram',
+        linkSrc: 'https://www.instagram.com/dontilondon',
+        iconComponent: <Instagram />
+    },
+    {
+        id: uuidv4(),
+        text: 'Facebook',
+        linkSrc: 'https://www.facebook.com/dontilondon',
+        iconComponent: <Facebook />
+    },
+    {
+        id: uuidv4(),
+        text: 'WhatsApp',
+        linkSrc: 'https://wa.me/00447384223449',
+        iconComponent: <Whatsapp />
     }
 ]

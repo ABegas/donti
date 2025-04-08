@@ -1,8 +1,6 @@
-import { v4 as uuidv4 } from 'uuid';
-
 export const TreatmentsPageContent = {
     title: 'Caring for Your Smile',
-    subtitle: `From routine cleanings to advanced procedures — we've got you covered.`,
+    subtitle: `From routine routine check ups to advanced procedures — we've got you covered.`,
     bannerImgSrc: '/images/treatment.jpg',
     bgContnentImg: '/images/bg.jpg'
 }
@@ -34,7 +32,6 @@ export const TreatmentsListContent = [
         url: '/treatments/full-smile-recovery'
     },
     {
-        id: uuidv4(),
         slug: 'composite-bounding',
         title: 'Composite Bonding',
         subtitle: `Enhance Your Smile with Composite Bonding`,
@@ -62,7 +59,6 @@ export const TreatmentsListContent = [
         url: '/treatments/composite-bonding'
     },
     {
-        id: uuidv4(),
         slug: 'ceramic-veneers',
         title: 'Ceramic veneers',
         subtitle: 'Transform Your Smile with Ceramic Veneers',
@@ -82,7 +78,6 @@ export const TreatmentsListContent = [
         url: '/treatments/ceramic-veneers'
     },
     {
-        id: uuidv4(),
         slug: 'porcelain-crowns-bridges',
         title: 'Porcelain Crowns & Bridges',
         subtitle: `Strength, Beauty & Protection`,
@@ -98,7 +93,6 @@ export const TreatmentsListContent = [
         url: '/treatments/porcelain-crowns-bridges'
     },
     {
-        id: uuidv4(),
         slug: 'invisalign-clear-aligners',
         title: 'Invisalign Clear Aligners',
         subtitle: `The Discreet Way to a Perfect Smile`,
@@ -132,10 +126,9 @@ export const TreatmentsListContent = [
         url: '/treatments/invisalign-clear-aligners'
     },
     {
-        id: uuidv4(),
         slug: 'teeth-whitening',
         title: 'Teeth Whitening',
-        subtitle: `Teeth Whitening - Reveal Your Brightest Smile`,
+        subtitle: `Reveal Your Brightest Smile`,
         text: `<p>A radiant, white smile can boost your confidence and leave a lasting impression. But over time,
                 coffee, wine, and everyday life can take their toll, dulling your teeth’s natural brilliance. Luckily,
                 our professional teeth whitening treatments can help you regain that fresh, luminous glow—safely
@@ -152,7 +145,6 @@ export const TreatmentsListContent = [
         url: '/treatments/teeth-whitening'
     },
     {
-        id: uuidv4(),
         slug: 'dental-implants',
         title: 'Dental Implants',
         subtitle: `A Permanent Solution for a Confident Smile`,
@@ -175,7 +167,6 @@ export const TreatmentsListContent = [
         url: '/treatments/dental-implants'
     },
     {
-        id: uuidv4(),
         slug: 'tooth-coloured-fillings',
         title: 'Tooth-coloured fillings',
         subtitle: `Seamless & Natural Protection`,
