@@ -16,7 +16,7 @@ const TreatmentsList = ({maxTileWidthDesktop = 'max-w-[23%]'}) => {
                         data-aos-delay={100 * index++}
                     >
                         <Image src={treatment.imgSrc} width={600} height={600} alt={treatment.title} className="z-[-1] absolute left-0 top-0 bg-cover w-full h-full object-cover opacity-45 sepia-50" />
-                        <Link href={`/treatments/${treatment.slug}`} className="group flex flex-col justify-between h-full">
+                        <Link href={`/treatments#${treatment.slug}`} className="group flex flex-col justify-between h-full">
                             <div>
                                 <div className="
                                     relative

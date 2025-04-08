@@ -31,7 +31,7 @@ export default function Home() {
                     text={AboutDonti.text} 
                     imgSrc={AboutDonti.imgSrc} 
                     imgAlt={AboutDonti.imgAlt}
-                    buttonText="Learn More"
+                    buttonText="Read More"
                     buttonLink={AboutDonti.btnSrc}
                     textPosition='left'
                 /> 
@@ -47,7 +47,7 @@ export default function Home() {
                 <TreatmentsList />
             </div>
             <div className="md:translate-y-[-180px]">
-                <ParalaxBanner imgSrc="/images/parallax.jpg">
+                <ParalaxBanner imgSrc="/images/free_initial_consultation.jpg">
                     <PromoMsg />
                 </ParalaxBanner>
             </div>

@@ -3,6 +3,10 @@ import { BookingContent } from '@data/pages'
 import ContactForm from '@components/Global/ContactForm'
 import FooterAddressInfo from '@components/Footer/FooterAddressInfo'
 
+export const metadata = {
+    title: "Contact Us",
+}
+
 const Treatments = () => {
     return (
         <>

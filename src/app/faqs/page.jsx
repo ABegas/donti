@@ -1,6 +1,10 @@
 import { FaqsContent } from "@data/faqs";
 import HeroBanner from "../components/Global/HeroBanner";
 
+export const metadata = {
+    title: "FAQ(s)",
+}
+
 export default function Faqs() {
     return (
         <>

@@ -3,6 +3,10 @@ import ContentWithBg from '@components/Global/ContentWithBg'
 import { DontiContent } from '@data/pages'
 import { LinkPrimary } from '../components/UI/Cta'
 
+export const metadata = {
+    title: "About Us",
+}
+
 const AboutUs = () => {
     return (
         <>

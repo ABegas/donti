@@ -34,7 +34,7 @@ export const AboutDoctor = {
             the London College of Oral Implantology (LCOI).`,
     imgSrc: '/images/doctor.jpg',
     imgAlt: 'Dt. Konstantinos Kanaridis',
-    btnText: 'Learn More',
+    btnText: 'Read More',
     btnSrc: '/doctor'
 }
 

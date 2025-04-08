@@ -1,6 +1,10 @@
 import { PackagesListContent, PortfolioContent } from "@data/pages";
 import HeroBanner from "../components/Global/HeroBanner";
 
+export const metadata = {
+    title: "Our Portfolio",
+}
+
 export default function Portfolio() {
     return (
         <>
