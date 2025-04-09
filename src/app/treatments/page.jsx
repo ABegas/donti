@@ -28,7 +28,7 @@ const Treatments = () => {
                                 <div className="flex flex-col md:flex-row mr-10">
                                     {treatment.itemImgSrc && (
                                         <div className="mb-6">
-                                            <Image src={treatment.itemImgSrc} width={600} height={600} alt={treatment.title} className="rounded-2xl brightness-75 sepia-40" unoptimized />
+                                            <Image src={treatment.itemImgSrc} width={600} height={600} alt={treatment.title} className="rounded-2xl brightness-75 sepia-40" />
                                         </div>
                                     )}
                                     <div className="md:w-1/2 md:ml-8" dangerouslySetInnerHTML={{__html: treatment.text}} />
