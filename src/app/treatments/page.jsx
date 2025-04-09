@@ -25,7 +25,7 @@ const Treatments = () => {
                         <li id={treatment.slug} key={treatment.slug} className="text-left my-12">
                             <h2 className="o-decor o-decor--black">{treatment.title}</h2>
                             <div className="flex flex-col mt-12">
-                                <div className="flex flex-col md:flex-row mr-10">
+                                <div className="flex flex-col md:flex-row md:mr-10">
                                     {treatment.itemImgSrc && (
                                         <div className="mb-6">
                                             <Image src={treatment.itemImgSrc} width={600} height={600} alt={treatment.title} className="rounded-2xl brightness-75 sepia-40" />

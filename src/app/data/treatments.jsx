@@ -1,7 +1,7 @@
 export const TreatmentsPageContent = {
     title: 'Caring for Your Smile',
     subtitle: `From routine check ups to advanced procedures — we've got you covered.`,
-    bannerImgSrc: '/images/treatment.jpg',
+    bannerImgSrc: '/images/treatments_banner.jpeg',
     bgContnentImg: '/images/bg.jpg'
 }
 
@@ -75,7 +75,7 @@ export const TreatmentsListContent = [
                 provide a naturally flawless appearance, ensuring your smile looks as perfect as it feels.</p>
                 <p>Let’s create the smile you’ve always wanted—designed just for you!</p>`,
         imgSrc: '/images/treatments_list/ceramic_veneers.jpeg',
-        itemImgSrc: '/images/treatments_list/ceramic_veneers.jpeg'
+        itemImgSrc: '/images/treatments_items/ceramic_veneers.jpeg'
     },
     {
         slug: 'porcelain-crowns-bridges',
