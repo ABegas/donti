@@ -20,8 +20,14 @@ const Doctor = () => {
             />
             <ContentWithBg text={DoctorContent.text} imgSrc={DoctorContent.bgContnentImg}>
                 <div className="flex flex-col md:flex-row mt-12">
-                    <Image src={DoctorContent.contentImg} width="992" height="1560" alt={DoctorContent.contentImgSubscription} className="md:w-[60%] rounded-2xl mr-10 brightness-75 sepia-40" />
-                    <div className="italic text-[20px] mt-12" dangerouslySetInnerHTML={{__html: DoctorContent.contentImgSubscription}} />
+                    <div className="md:w-1/2 mr-10">
+                        <Image src={DoctorContent.contentImg} width="992" height="1560" alt={DoctorContent.contentImgSubscription} className="rounded-2xl brightness-75 sepia-40" />
+                        <div className="italic text-[16px] mt-4" dangerouslySetInnerHTML={{__html: DoctorContent.contentImgSubscription}} />
+                    </div>                    
+                    <div className="md:w-1/2 mt-2">
+                        <div dangerouslySetInnerHTML={{__html: DoctorContent.textForImg}} />
+                        
+                    </div>
                 </div>
                 
             </ContentWithBg>

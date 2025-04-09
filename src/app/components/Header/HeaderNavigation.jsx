@@ -24,6 +24,28 @@ const HeaderNavigation = ({isSticky}) => {
                 <span></span>
                 <span></span>
                 <ul className="c-menu xl:flex justify-between">
+                    <li className="xl:hidden">
+                        <Link 
+                            href='/'
+                            className={`
+                                inline-block
+                                font-poppins
+                                border-b-[0.5px]
+                                h-[38px]
+                                xl:hover:h-[32px]
+                                transition-all
+                                hover:border-black
+                                xl:text-[#fff]
+                                text-[18px]
+                                xl:hover:border-brand
+                                xl:hover:text-brand
+                                lg:text-[16px]
+                                xl:text-[18px]
+                                ${pathname === '/' ? 'border-black xl:border-brand xl:h-[32px]' : 'border-transparent'}
+                            `}>
+                                <label htmlFor="menuCheckbox" className="h-[38px] inline-block cursor-pointer font-[200]">Home</label>
+                        </Link>
+                    </li>
                     {HeaderNavigationLinks.map((link) => (
                         <li key={link.id} className="px-6">
                             <Link 

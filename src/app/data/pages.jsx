@@ -1,6 +1,6 @@
 export const DoctorContent = {
     title: `Dr Konstantinos`,
-    subtitle: `Principal Dentist - GDC: 281028`,
+    subtitle: `Principal Dentist - <span style="font-size: 16px">GDC: 281028</span>`,
     text: `<p>Dr. Konstantinos Kanaridis is a twice - Award winning Dentist qualified with Doctor of Dental
             Medicine degree (MDDr.). 
             Since qualifying, he has always maintained a keen interest in continual Postgraduate training and
@@ -24,8 +24,8 @@ export const DoctorContent = {
             smile of their dreams.</p>
             <p>Dr. Kanaridis prides himself on his compassionate nature, particularly helping nervous patients
             feel at ease, and enjoys minimally invasive and ethical cosmetic dentistry. He is highly rated and
-            regarded by his patients due to his great understanding of their needs and expectations.</p>
-            <p>Alongside Dr. Konstantinos, we are privileged to have Sheila, who has been working as a dental
+            regarded by his patients due to his great understanding of their needs and expectations.</p>`,
+    textForImg: `<p>Alongside Dr. Konstantinos, we are privileged to have Sheila, who has been working as a dental
             nurse for an impressive 38 years. Her extensive experience and professionalism contribute
             significantly to the smooth running of the clinic, ensuring patients feel comfortable and well cared
             for throughout their treatment. Sheila always has a smile on her face, taking great satisfaction in
@@ -109,7 +109,7 @@ export const BookingContent = {
             initial video consultation</strong>, helping you make an informed decision before visiting our London
             clinic</p>`,
     promoText: `FREE INITIAL CONSULTATION`,
-    bannerImgSrc: '/images/about_2.jpg',
+    bannerImgSrc: '/images/booking_bg.jpeg',
     imgAlt: 'Book your appointment',
 }
 

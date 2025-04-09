@@ -1,6 +1,6 @@
 export const TreatmentsPageContent = {
     title: 'Caring for Your Smile',
-    subtitle: `From routine routine check ups to advanced procedures — we've got you covered.`,
+    subtitle: `From routine check ups to advanced procedures — we've got you covered.`,
     bannerImgSrc: '/images/treatment.jpg',
     bgContnentImg: '/images/bg.jpg'
 }
@@ -13,8 +13,8 @@ export const TreatmentsListContent = [
         text: `<p>If you feel self-conscious about your <strong>teeth, smile, or overall oral health</strong>, a <strong>Full Smile Makeover</strong>
                 can help you achieve the confidence you deserve. Whether you’re looking to restore function,
                 improve aesthetics, or both, we create a <strong>personalized treatment plan</strong> tailored to your unique
-                needs.</p>
-                <h4>How It Works</h4>
+                needs.</p>`,
+        text2: `<h4>How It Works</h4>
                 <ul>
                     <li><span>Comprehensive Consultation</span> – Dr. Konstantinos will begin with a <strong>detailed assessment,
                     including check-ups, X-rays, and digital scans</strong>, to understand your concerns and goals.</li>
@@ -29,7 +29,7 @@ export const TreatmentsListContent = [
                 both natural-looking and long-lasting</strong>, giving you a <strong>healthy, confident smile that truly reflects
                 you!</strong></p>`,
         imgSrc: '/images/treatments_list/smile_makeover.jpeg',
-        url: '/treatments/full-smile-recovery'
+        itemImgSrc: '/images/treatments_items/smile_makeover.jpeg'
     },
     {
         slug: 'composite-bounding',
@@ -38,8 +38,8 @@ export const TreatmentsListContent = [
         text: `<p>Composite bonding is a quick, painless, and transformative cosmetic treatment that can restore and
                 refine your smile in just one visit. Whether you're looking to repair chipped or cracked teeth, close
                 small gaps, or enhance the symmetry and contour of your smile, this versatile treatment offers a
-                natural-looking and long-lasting solution.</p>
-                <p>Using a high-quality tooth-colored resin, our skilled dentist, Dr. Konstantinos, carefully sculpts and
+                natural-looking and long-lasting solution.</p>`,
+        text2: `<p>Using a high-quality tooth-colored resin, our skilled dentist, Dr. Konstantinos, carefully sculpts and
                 reshapes your teeth to blend seamlessly with the rest of your smile. With an exceptional eye for
                 detail and artistry, Dr. Konstantinos has perfected the technique of composite bonding, ensuring
                 beautifully natural results tailored to each patient. The material is then polished to a smooth, glossy
@@ -56,7 +56,7 @@ export const TreatmentsListContent = [
                 bonding is one of the most accessible ways to achieve a more confident smile.</p>
                 <p>Book your appointment today and let Dr. Konstantinos create the perfect smile for you!</p>`,
         imgSrc: '/images/treatments_list/composite_bonding.jpeg',
-        url: '/treatments/composite-bonding'
+        itemImgSrc: '/images/treatments_items/composite_bonding.jpeg'
     },
     {
         slug: 'ceramic-veneers',
@@ -65,8 +65,8 @@ export const TreatmentsListContent = [
         text: `<p>Dreaming of a flawless smile? Ceramic veneers offer a simple yet powerful way to enhance your
                 teeth, correcting stains, chips, misalignment, and other imperfections. These ultra-thin, custom-
                 crafted porcelain shells are designed to blend seamlessly with your natural teeth, creating a radiant
-                and confident smile.</p>
-                <h4>Why Choose Ceramic Veneers?</h4>
+                and confident smile.</p>`,
+        text2: `<h4>Why Choose Ceramic Veneers?</h4>
                 <p>Natural Aesthetics – Crafted from high-quality porcelain for a lifelike finish
                 Long-Lasting – With proper care, veneers can last 10-15 years
                 Minimally Invasive – Requires only minimal tooth preparation
@@ -75,7 +75,7 @@ export const TreatmentsListContent = [
                 provide a naturally flawless appearance, ensuring your smile looks as perfect as it feels.</p>
                 <p>Let’s create the smile you’ve always wanted—designed just for you!</p>`,
         imgSrc: '/images/treatments_list/ceramic_veneers.jpeg',
-        url: '/treatments/ceramic-veneers'
+        itemImgSrc: '/images/treatments_items/ceramic_veneers.jpeg'
     },
     {
         slug: 'porcelain-crowns-bridges',
@@ -90,7 +90,7 @@ export const TreatmentsListContent = [
                 <p>Both options are durable, natural-looking, and long-lasting, ensuring your smile stays strong and
                 beautiful for years to come!</p>`,
         imgSrc: '/images/treatments_list/porcelain_crowns.jpeg',
-        url: '/treatments/porcelain-crowns-bridges'
+        itemImgSrc: '/images/treatments_items/porcelain_crowns_bridges.jpeg'
     },
     {
         slug: 'invisalign-clear-aligners',
@@ -99,8 +99,8 @@ export const TreatmentsListContent = [
         text: `<p>If you’ve ever wanted straighter teeth without the hassle of metal braces, Invisalign® clear aligners
                 offer a comfortable, nearly invisible solution. Designed for all ages, Invisalign gently and
                 effectively shifts teeth into alignment using a series of custom-made, removable trays—without
-                brackets or wires!</p>
-                <h4>Why Choose Invisalign?</h4>
+                brackets or wires!</p>`,
+        text2: `<h4>Why Choose Invisalign?</h4>
                 <ul>
                     <li><span>Virtually Invisible</span> – Clear aligners blend seamlessly with your smile</li>
                     <li><span>Removable & Convenient</span> – Eat, drink, brush, and floss with ease</li>
@@ -123,7 +123,7 @@ export const TreatmentsListContent = [
                 <p>With Invisalign, you can get the perfect foundation for a stunning smile transformation—all while
                 keeping your treatment discreet and comfortable!</p>`,
         imgSrc: '/images/treatments_list/invisalign.jpeg',
-        url: '/treatments/invisalign-clear-aligners'
+        itemImgSrc: '/images/treatments_items/invisalign.jpeg'
     },
     {
         slug: 'teeth-whitening',
@@ -134,15 +134,15 @@ export const TreatmentsListContent = [
                 our professional teeth whitening treatments can help you regain that fresh, luminous glow—safely
                 and effectively.</p>
                 <p>Philips Zoom! In-Clinic Whitening – Achieve a noticeably whiter smile in just 45 minutes with our
-                advanced light-activated treatment.</p>
-                <p>Philips Zoom! Take-Home Kit – Enjoy professional whitening results from the comfort of your
+                advanced light-activated treatment.</p>`,
+        text2: `<p>Philips Zoom! Take-Home Kit – Enjoy professional whitening results from the comfort of your
                 home with custom trays and high-quality gel.</p>
                 <p>Boutique Whitening – A premium at-home system that delivers gradual, long-lasting brightness
                 with minimal sensitivity.</p>
                 <p>Whether you're looking for a quick boost or a complete transformation, our expert whitening
                 solutions will help you smile with confidence every day!</p>`,
         imgSrc: '/images/treatments_list/teeth_whitening.jpeg',
-        url: '/treatments/teeth-whitening'
+        itemImgSrc: '/images/treatments_items/teeth_whitening.jpeg'
     },
     {
         slug: 'dental-implants',
@@ -151,8 +151,8 @@ export const TreatmentsListContent = [
         text: `<p>Missing teeth can impact your confidence, speech, and ability to enjoy food, but dental implants
                 offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>
                 <p>Missing teeth can impact your confidence, speech, and ability to enjoy food, but dental implants
-                offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>
-                <h4>Why Choose Dental Implants?</h4>
+                offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>`,
+        text2: `<h4>Why Choose Dental Implants?</h4>
                 <ul>
                     <li><span>Natural Look & Feel</span> – Blends seamlessly with your smile</li>
                     <li><span>Strong & Long-Lasting</span> – Can last a lifetime with proper care</li>
@@ -164,7 +164,7 @@ export const TreatmentsListContent = [
                 provide the closest thing to getting your natural teeth back—so you can smile, eat, and live with
                 confidence!</p>`,
         imgSrc: '/images/treatments_list/dental_implants.jpg',
-        url: '/treatments/dental-implants'
+        itemImgSrc: '/images/treatments_items/dental_implants.jpeg'
     },
     {
         slug: 'tooth-coloured-fillings',
@@ -176,6 +176,6 @@ export const TreatmentsListContent = [
                 lasting protection while preserving your tooth’s natural structure. The result? A healthy, beautiful
                 smile—with no visible signs of treatment!</p>`,
         imgSrc: '/images/treatments_list/tooth_coloured.jpeg',
-        url: '/treatments/tooth-coloured-fillings'
+        itemImgSrc: '/images/treatments_items/tooth_coloured.jpeg'
     }
 ]
