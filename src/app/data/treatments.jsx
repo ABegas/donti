@@ -75,7 +75,7 @@ export const TreatmentsListContent = [
                 provide a naturally flawless appearance, ensuring your smile looks as perfect as it feels.</p>
                 <p>Let’s create the smile you’ve always wanted—designed just for you!</p>`,
         imgSrc: '/images/treatments_list/ceramic_veneers.jpeg',
-        itemImgSrc: '/images/treatments_items/ceramic_veneers.jpeg'
+        itemImgSrc: '/images/treatments_list/ceramic_veneers.jpeg'
     },
     {
         slug: 'porcelain-crowns-bridges',
@@ -176,6 +176,6 @@ export const TreatmentsListContent = [
                 lasting protection while preserving your tooth’s natural structure. The result? A healthy, beautiful
                 smile—with no visible signs of treatment!</p>`,
         imgSrc: '/images/treatments_list/tooth_coloured.jpeg',
-        itemImgSrc: '/images/treatments_items/tooth_coloured.jpeg'
+        itemImgSrc: '/images/treatments_list/tooth_coloured.jpeg'
     }
 ]

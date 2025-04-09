@@ -26,8 +26,7 @@ export const metadata = {
         { rel: "icon", url: "/favicon.ico" },
         { rel: "apple-touch-icon", url: "/apple-touch-icon.png" },
         { rel: "shortcut icon", url: "/favicon.ico" },
-    ],
-    manifest: "/manifest.webmanifest"
+    ]
 }
 
 export default function RootLayout({ children }) {
