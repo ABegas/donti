@@ -107,7 +107,7 @@ export const PackagesListContent = [
     {
       title: "Donti Natural Glow Package",
       services: "Invisalign + Teeth Whitening",
-      price: "£3,400",
+      price: "£3,600",
       description: "Perfect for enhancing your natural smile with subtle whitening and alignment.",
     },
     {
