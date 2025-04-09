@@ -123,7 +123,7 @@ export const TreatmentsListContent = [
                 <p>With Invisalign, you can get the perfect foundation for a stunning smile transformation—all while
                 keeping your treatment discreet and comfortable!</p>`,
         imgSrc: '/images/treatments_list/invisalign.jpeg',
-        itemImgSrc: '/images/treatments_items/invisalign.jpeg'
+        itemImgSrc: '/images/treatments_items/Invisalign.jpeg'
     },
     {
         slug: 'teeth-whitening',
@@ -164,7 +164,7 @@ export const TreatmentsListContent = [
                 provide the closest thing to getting your natural teeth back—so you can smile, eat, and live with
                 confidence!</p>`,
         imgSrc: '/images/treatments_list/dental_implants.jpg',
-        itemImgSrc: '/images/treatments_items/dental_implants.jpeg'
+        itemImgSrc: '/images/treatments_items/dental_Implants.jpeg'
     },
     {
         slug: 'tooth-coloured-fillings',
