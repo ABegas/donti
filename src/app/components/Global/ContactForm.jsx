@@ -148,6 +148,9 @@ const ContactForm = () => {
                                 <option value="Teeth Whitening">Teeth Whitening</option>
                                 <option value="Dental Implants">Dental Implants</option>
                                 <option value="Tooth-coloured Fillings">Tooth-coloured Fillings</option>
+                                <option value="Dental Hygiene">Dental Hygiene</option>
+                                <option value="Dental Check-Up">Dental Check-Up</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
 

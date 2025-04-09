@@ -313,7 +313,7 @@ p {
     h2,
     h3,
     h4 {
-        margin-block: 24px;
+        margin-bottom: 24px;
     }
 
     li ul {
@@ -326,3 +326,45 @@ p {
         }
     }
 }
+
+.szh-accordion {
+    border-top: 1px solid #ccc;
+    
+    &__item {
+        border-bottom: 1px solid #ccc;
+  
+        &-btn {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            padding: 1rem;
+            font-size: 24px;
+            text-align: left;
+            background-color: transparent;
+            border: none;
+
+            &:hover {
+                background-color: rgba(#f3f3f3, 0.5);
+                transition: background-color 0.25s ease-in-out;
+            }
+        }
+  
+        &-content {
+            transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+        }
+  
+        &-panel {
+            padding: 1rem;
+        }
+  
+        &--expanded {
+            border-bottom: 1px solid transparent;
+            .chevron-down {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+  

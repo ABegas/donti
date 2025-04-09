@@ -33,7 +33,8 @@ export const AddressInfoContent = [
                 United Kingdom 
                 <a href="https://www.google.com/maps/dir/?api=1&destination=51.51255121018994,-0.08840383539213438" target="_blank" rel="noopener noreferrer" style="display:inline-block; transform: translateY(7px)" title="Go to Google Map">
                     <img src="/icons/google_map.svg" width="25px" height="25px">
-                </a>`
+                </a><br/>
+                just steps from Bank Underground Station (Exit 6)`
     },
     {
         title: 'Contact Us:',
