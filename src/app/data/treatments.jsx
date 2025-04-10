@@ -13,8 +13,8 @@ export const TreatmentsListContent = [
         text: `<p>If you feel self-conscious about your <strong>teeth, smile, or overall oral health</strong>, a <strong>Full Smile Makeover</strong>
                 can help you achieve the confidence you deserve. Whether you’re looking to restore function,
                 improve aesthetics, or both, we create a <strong>personalized treatment plan</strong> tailored to your unique
-                needs.</p>`,
-        text2: `<h4>How It Works</h4>
+                needs.</p>
+                <h4>How It Works</h4>
                 <ul>
                     <li><span>Comprehensive Consultation</span> – Dr. Konstantinos will begin with a <strong>detailed assessment,
                     including check-ups, X-rays, and digital scans</strong>, to understand your concerns and goals.</li>
@@ -38,8 +38,8 @@ export const TreatmentsListContent = [
         text: `<p>Composite bonding is a quick, painless, and transformative cosmetic treatment that can restore and
                 refine your smile in just one visit. Whether you're looking to repair chipped or cracked teeth, close
                 small gaps, or enhance the symmetry and contour of your smile, this versatile treatment offers a
-                natural-looking and long-lasting solution.</p>`,
-        text2: `<p>Using a high-quality tooth-colored resin, our skilled dentist, Dr. Konstantinos, carefully sculpts and
+                natural-looking and long-lasting solution.</p>
+                <p>Using a high-quality tooth-colored resin, our skilled dentist, Dr. Konstantinos, carefully sculpts and
                 reshapes your teeth to blend seamlessly with the rest of your smile. With an exceptional eye for
                 detail and artistry, Dr. Konstantinos has perfected the technique of composite bonding, ensuring
                 beautifully natural results tailored to each patient. The material is then polished to a smooth, glossy
@@ -65,8 +65,8 @@ export const TreatmentsListContent = [
         text: `<p>Dreaming of a flawless smile? Ceramic veneers offer a simple yet powerful way to enhance your
                 teeth, correcting stains, chips, misalignment, and other imperfections. These ultra-thin, custom-
                 crafted porcelain shells are designed to blend seamlessly with your natural teeth, creating a radiant
-                and confident smile.</p>`,
-        text2: `<h4>Why Choose Ceramic Veneers?</h4>
+                and confident smile.</p>
+                <h4>Why Choose Ceramic Veneers?</h4>
                 <p>Natural Aesthetics – Crafted from high-quality porcelain for a lifelike finish
                 Long-Lasting – With proper care, veneers can last 10-15 years
                 Minimally Invasive – Requires only minimal tooth preparation
@@ -99,8 +99,8 @@ export const TreatmentsListContent = [
         text: `<p>If you’ve ever wanted straighter teeth without the hassle of metal braces, Invisalign® clear aligners
                 offer a comfortable, nearly invisible solution. Designed for all ages, Invisalign gently and
                 effectively shifts teeth into alignment using a series of custom-made, removable trays—without
-                brackets or wires!</p>`,
-        text2: `<h4>Why Choose Invisalign?</h4>
+                brackets or wires!</p>
+                <h4>Why Choose Invisalign?</h4>
                 <ul>
                     <li><span>Virtually Invisible</span> – Clear aligners blend seamlessly with your smile</li>
                     <li><span>Removable & Convenient</span> – Eat, drink, brush, and floss with ease</li>
@@ -134,8 +134,8 @@ export const TreatmentsListContent = [
                 our professional teeth whitening treatments can help you regain that fresh, luminous glow—safely
                 and effectively.</p>
                 <p>Philips Zoom! In-Clinic Whitening – Achieve a noticeably whiter smile in just 45 minutes with our
-                advanced light-activated treatment.</p>`,
-        text2: `<p>Philips Zoom! Take-Home Kit – Enjoy professional whitening results from the comfort of your
+                advanced light-activated treatment.</p>
+                <p>Philips Zoom! Take-Home Kit – Enjoy professional whitening results from the comfort of your
                 home with custom trays and high-quality gel.</p>
                 <p>Boutique Whitening – A premium at-home system that delivers gradual, long-lasting brightness
                 with minimal sensitivity.</p>
@@ -151,8 +151,8 @@ export const TreatmentsListContent = [
         text: `<p>Missing teeth can impact your confidence, speech, and ability to enjoy food, but dental implants
                 offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>
                 <p>Missing teeth can impact your confidence, speech, and ability to enjoy food, but dental implants
-                offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>`,
-        text2: `<h4>Why Choose Dental Implants?</h4>
+                offer a lifelike, long-lasting solution that looks, feels, and functions just like natural teeth.</p>
+                <h4>Why Choose Dental Implants?</h4>
                 <ul>
                     <li><span>Natural Look & Feel</span> – Blends seamlessly with your smile</li>
                     <li><span>Strong & Long-Lasting</span> – Can last a lifetime with proper care</li>

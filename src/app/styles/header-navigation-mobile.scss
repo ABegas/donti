@@ -98,7 +98,7 @@
       cursor: pointer;
     }
     
-    .c-menuToggle input:checked ~ ul {
+    .c-menuToggle input:checked ~ .c-menu {
       transform: translateX(-69%);
     }
 }

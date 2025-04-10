@@ -7,7 +7,7 @@ const PromoMsg = () => {
             <div className="text-[22px] mb-6">Our patients come from all over the UK!</div>
             <div className="text-[18px] mb-6 max-w-[900px]">We understand that traveling for dental treatment is a big commitment. That’s why we offer a <strong>free
                 initial video consultation</strong>, helping you make an informed decision before visiting our London clinic</div>
-            <LinkPrimary link="/booking" text="Schedule Your Appointment" />
+            <LinkPrimary link="/contact" text="Schedule Your Appointment" />
         </div>
     )
 }

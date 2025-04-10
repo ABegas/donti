@@ -34,6 +34,6 @@ export const HeaderNavigationLinks = [
     {
         id: uuidv4(),
         title: 'Schedule Your Appointment',
-        url: '/booking'
+        url: '/contact'
     }
 ]
