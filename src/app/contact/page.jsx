@@ -7,7 +7,7 @@ export const metadata = {
     title: "Contact Us",
 }
 
-const Treatments = () => {
+const Contact = () => {
     return (
         <>
             <HeroBanner
@@ -37,4 +37,4 @@ const Treatments = () => {
     )
 }
 
-export default Treatments
+export default Contact

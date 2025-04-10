@@ -57,6 +57,14 @@ p {
     margin-bottom: 16px;
 }
 
+.clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
 .wrapper {
     width: 100%;
     max-width: 1920px;

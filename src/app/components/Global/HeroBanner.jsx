@@ -23,7 +23,7 @@ const HeroBanner = ({imgSrc, height, imgContainCustomSize, imgWidth, imgHeight, 
                     </div>
                     {button && (
                         <div className="w-full lg:w-auto">
-                            <LinkPrimary text="Schedule Your Appointment" link="/booking" style="w-full" />
+                            <LinkPrimary text="Schedule Your Appointment" link="/contact" style="w-full" />
                         </div>
                     )}
                 </div>

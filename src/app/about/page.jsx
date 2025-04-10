@@ -20,7 +20,7 @@ const AboutUs = () => {
                 height={'h-[25vh]'}
             />
             <ContentWithBg text={DontiContent.text} imgSrc={DontiContent.bgContnentImg}>
-                <LinkPrimary text="Schedule Your Consultation" link="/booking" theme="dark" style="mt-4" />
+                <LinkPrimary text="Schedule Your Consultation" link="/contact" theme="dark" style="mt-4" />
             </ContentWithBg>
         </>
     )
