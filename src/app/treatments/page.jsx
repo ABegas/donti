@@ -22,7 +22,7 @@ const Treatments = () => {
             <ContentWithBg imgSrc={TreatmentsPageContent.bgContnentImg}>
                 <ul>
                     {TreatmentsListContent.map((treatment) => (
-                        <li id={treatment.slug} key={treatment.slug} className="text-left my-12">
+                        <li id={treatment.slug} key={treatment.slug} className="text-left mb-20">
                             <h2 className="o-decor o-decor--black">{treatment.title}</h2>
                             <div className="flex flex-col mt-12">
                                 <div className="flex flex-col md:flex-row md:mr-10">
