@@ -1,5 +1,7 @@
-import { FaqsContent } from "@data/faqs";
+import { FaqsContent, FaqsListContent } from "@data/faqs";
 import HeroBanner from "../components/Global/HeroBanner";
+import ContentWithBg from "../components/Global/ContentWithBg"
+import { Accordion, AccordionItem } from '@szhsin/react-accordion'
 
 export const metadata = {
     title: "FAQ(s)",
@@ -17,7 +19,28 @@ export default function Faqs() {
                 overlay={true}
                 height={'h-[25vh]'}
             />
-            <h1 className="text-center py-40">FAQ(S) section will be available soon</h1>
+            <ContentWithBg imgSrc={FaqsContent.bgContnentImg}>
+                <section className="py-16">
+                    <Accordion transition transitionTimeout={200} className="mb-12">
+                        {FaqsListContent.map((item) => (
+                            <AccordionItem key={item.id} header={item.title} initialEntered={(item.isOpen) ? true : false} className="border-b-1 border-dashed border-b-gray-400">
+                                {item.items.map((question, i) => 
+                                    <div key={i} className="border-b-1 items-end border-dashed border-b-gray-400 py-3 md:px-4 md:mx-4">
+                                        {question.question && 
+                                            <div className="font-[400] pb-3">
+                                                {question.question}
+                                            </div>
+                                        }
+                                        {question.answer &&
+                                            <div dangerouslySetInnerHTML={{__html: question.answer}} className="mr-4" />
+                                        }
+                                    </div>
+                                )}
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+                </section>
+            </ContentWithBg>
         </>
     );
   }

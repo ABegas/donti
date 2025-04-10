@@ -11,8 +11,8 @@ const HeroBanner = ({imgSrc, height, imgContainCustomSize, imgWidth, imgHeight, 
             <Image
                 className={`${imgContainCustomSize ? imgContainCustomSize + ' object-cover md:object-contain' : 'h-full object-cover'} absolute left-o top-0 w-full`}
                 src={imgSrc}
-                width={imgWidth}
-                height={imgHeight}
+                width="1920"
+                height="930"
                 alt={title}
             />
             <div className="absolute z-[2] px-8 py-4 bottom-0 left-0 w-full bg-[rgba(255,255,255,0.1)] backdrop-blur-[5px]">

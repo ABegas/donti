@@ -1,7 +1,7 @@
 export const TreatmentsPageContent = {
     title: 'Caring for Your Smile',
     subtitle: `From routine check ups to advanced procedures — we've got you covered.`,
-    bannerImgSrc: '/images/treatments_banner.jpeg',
+    bannerImgSrc: '/images/free_initial_consultation.jpg',
     bgContnentImg: '/images/bg.jpg'
 }
 
