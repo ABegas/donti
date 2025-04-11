@@ -72,7 +72,7 @@ const HeaderNavigation = ({isSticky}) => {
                                 </Link>
                             </li>
                         ))}
-                        <li className="fixed bottom-0">
+                        <li>
                             <SocialLinks styles="xl:hidden gap-4" type="light" />
                         </li>
                     </ul>

@@ -1,7 +1,7 @@
 import { PortfolioContent } from "@data/pages"
-import HeroBanner from "../components/Global/HeroBanner"
-import Video from "../components/Global/Video";
-import ContentWithBg from "../components/Global/ContentWithBg";
+import HeroBanner from "@components/Global/HeroBanner"
+import Video from "@components/Global/Video";
+import ContentWithBg from "@components/Global/ContentWithBg";
 
 export const metadata = {
     title: "Real Stories, Real Smiles",
@@ -32,7 +32,7 @@ export default function Portfolio() {
                         }
                         <div className="h-full w-full md:w-[35%] bg-[rgba(0,0,0,0.5)] rounded-2xl overflow-hidden shadow-2xl" data-aos="fade-right">
                             <div className="relative w-full pb-[177.77%] rounded-2xl overflow-hidden">
-                                <Video videoSrc={item.videoSrc} />
+                                <Video videoSrc={item.videoSrc} poster={item.poster} />
                             </div>
                         </div>
                     </div>
