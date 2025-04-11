@@ -47,15 +47,15 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
-        <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <body className={`${oswald.variable} ${poppins.variable} font-poppins font-[200] bg-brand text-gray-600`}>
-            <Header />
-            {children}
-            <Footer />
-        </body>
+            <body className={`${oswald.variable} ${poppins.variable} font-poppins font-[200] bg-brand text-gray-600`}>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+                <Header />
+                {children}
+                <Footer />
+            </body>
         </html>
     );
 }
