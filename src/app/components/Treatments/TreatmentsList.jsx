@@ -2,14 +2,14 @@ import { TreatmentsListContent } from '@data/treatments'
 import Image from "next/image"
 import Link from 'next/link'
 
-const TreatmentsList = ({maxTileWidthDesktop = 'max-w-[23%]'}) => {
+const TreatmentsList = () => {
     return (
         <div className="px-[32px]">
             <ul className="text-brand max-w-[1400px] w-full mx-auto flex justify-center gap-8 flex-wrap py-[80px]">
                 {TreatmentsListContent.map((treatment, index) => (
                     <li
                         key={treatment.slug}
-                        className={`overflow-hidden w-full md:max-w-[47%] xl:${maxTileWidthDesktop} bg-black rounded-[0_60px_0_60px] h-[460px]`}
+                        className={`overflow-hidden w-full md:max-w-[47%] bg-black rounded-[0_60px_0_60px] h-[460px]`}
                         data-aos="fade-up"
                         data-aos-offset="-100"
                         data-aos-anchor-placement="top-bottom"

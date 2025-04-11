@@ -27,7 +27,7 @@ const Treatments = () => {
                             <div className="clearfix">
                                 {treatment.itemImgSrc && (
                                     <div className={`mb-10 float-none ${i % 2 === 1 ? 'md:float-right md:ml-12' : 'md:float-left md:mr-12'}`}>
-                                        <Image src={treatment.itemImgSrc} width={600} height={600} alt={treatment.title} className="shadow-2xl rounded-2xl brightness-75 sepia-40" />
+                                        <Image src={treatment.itemImgSrc} width={600} height={600} alt={treatment.title} className="shadow-2xl rounded-2xl" />
                                     </div>
                                 )}
                                 <div dangerouslySetInnerHTML={{__html: treatment.text}} />

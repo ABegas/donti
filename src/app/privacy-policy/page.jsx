@@ -8,10 +8,6 @@ export const metadata = {
 
 export default function PrivacyPolicy() {
     return (
-        <div className="pt-[260px] pb-[60px] header-dark">
-            <div className="mx-auto max-w-[1400px] flex flex-col md:flex-row gap-20">
-                <ServiceContent data={ServiceLinksContent} />
-            </div>   
-        </div>
+        <ServiceContent data={ServiceLinksContent} />
     )
   }
