@@ -77,7 +77,7 @@ const FooterGoogleMap = () => {
     })
 
     if (!isLoaded) {
-        return <p>Loading map...</p>
+        return <div className="h-[500px] bg-brand-dark text-center text-brand pt-40">Map is Loading...</div>
     } else {
         customIcon = {
             url: '/icons/marker.png', // can be local or external
@@ -86,7 +86,7 @@ const FooterGoogleMap = () => {
     } 
     
     return (
-        <div className="relative shadow-[0_28px_25px_3px_rgba(0,0,0,0.3)] z-10">
+        <div className="relative shadow-[0_28px_25px_3px_rgba(0,0,0,0.3)] z-10 h-[500px] bg-brand-dark">
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}

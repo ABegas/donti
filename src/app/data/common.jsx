@@ -88,3 +88,24 @@ export const SocialsLinksContent = [
         iconComponent: <Mail />
     }
 ]
+
+export const ServiceLinksContent = [
+    {
+        id: uuidv4(),
+        text: 'Terms & Conditions',
+        url: '/terms-conditions',
+        content: 'Terms & Conditions will be added soon'
+    },
+    {
+        id: uuidv4(),
+        text: 'Privacy Policy',
+        url: '/privacy-policy',
+        content: 'Privacy Policy will be added soon'
+    },
+    {
+        id: uuidv4(),
+        text: 'Cookie Policy',
+        url: '/cookie-policy',
+        content: 'Cookie Policy for Donti Dental Clinic'
+    }
+]

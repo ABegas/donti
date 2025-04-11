@@ -13,7 +13,7 @@ const HeroVideo = () => {
                         <LinkPrimaryArrow text="About Us" link="/about" style="mt-4 md:mt-0 md:ml-12 justify-center" />
                     </div>
                 </div>
-                <video src="videos/hero-video.mov" autoPlay muted loop playsInline className="absolute top-0 left-0 h-full w-full object-cover sepia-[40%]"></video>
+                <video src="videos/hero-video.mov" autoPlay muted loop playsInline className="absolute top-0 left-0 h-full w-full object-cover sepia-[40%]" />
             </div>
         </section>
     )

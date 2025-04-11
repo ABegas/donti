@@ -38,7 +38,7 @@ const Header = () => {
             px-8
             transition-all
             duration-400
-            ${isSticky ? 'before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-brand-dark before:opacity-[30%] backdrop-blur-xl' : ''}
+            ${isSticky ? 'is-sticky before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-brand-dark before:opacity-[30%] backdrop-blur-xl' : ''}
         `}>
             <h1 className="sr-only">Donti Dental Clinic</h1>
             <Link href="/" className={`relative pb-[26px] pt-[10px] transition-all duration-400 ${isSticky ? 'xl:py-[11px] w-[120px] xl:w-[120px]' : 'xl:py-[36px] w-[180px] xl:w-[250px]'}`}>
