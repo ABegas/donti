@@ -4,8 +4,8 @@ import ContentWithBg from "../components/Global/ContentWithBg"
 import { Accordion, AccordionItem } from '@szhsin/react-accordion'
 
 export const metadata = {
-    title: "Our Fees",
-    description: "Transparent pricing, premium care in Donti Dentl Clinic.",
+    title: "Transparent Pricing at Donti Dental Clinic",
+    description: "View our clear and competitive pricing for various dental treatments and services."
 }
 
 export default function FeesSection() {

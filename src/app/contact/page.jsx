@@ -5,6 +5,7 @@ import FooterAddressInfo from '@components/Footer/FooterAddressInfo'
 
 export const metadata = {
     title: "Contact Us",
+    description: "Schedule your consultation with Donti Dental Clinic and take the first step towards a healthier, brighter smile."
 }
 
 const Contact = () => {

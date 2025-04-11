@@ -4,7 +4,8 @@ import Video from "../components/Global/Video";
 import ContentWithBg from "../components/Global/ContentWithBg";
 
 export const metadata = {
-    title: "Our Portfolio",
+    title: "Real Stories, Real Smiles",
+    description: "Hear from our patients and see the smiles we've helped create — real stories, real transformations."
 }
 
 export default function Portfolio() {

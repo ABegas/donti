@@ -1,8 +1,8 @@
 import { Oswald, Poppins } from "next/font/google";
 import "./styles/tailwind.css";
 import "./styles/globals.scss";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "@components/Header/Header";
+import Footer from "@components/Footer/Footer";
 
 const oswald = Oswald({
     subsets: ["latin"],
@@ -18,10 +18,10 @@ const poppins = Poppins({
 
 export const metadata = {
     title: {
-        default: "Donti Dental Clinic",
+        default: "Donti Dental Clinic | Cosmetic & Restorative Dentistry in London",
         template: "%s | Donti Dental Clinic",
     },
-    description: "Discover exceptional dental care at Donti Dental Clinic in the heart of London. We offer advanced treatments and a modern, comfortable environment for your perfect smile",
+    description: "Located in the heart of the City of London, Donti Dental Clinic offers advanced, high-quality dental treatments tailored to your unique needs and goals",
     icons: [
         { rel: "icon", url: "/favicon.ico" },
         { rel: "apple-touch-icon", url: "/apple-touch-icon.png" },
@@ -30,13 +30,32 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={`${oswald.variable} ${poppins.variable} font-poppins font-[200] bg-brand text-gray-600`}>
-        <Header />
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Donti Dental Clinic",
+        "url": "https://www.dontidentalclinic.co.uk",
+        "telephone": "020 3576 9700",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "King William 1",
+          "addressLocality": "London",
+          "postalCode": "EC4N 7AR",
+          "addressCountry": "GB"
+        }
+    }
+
+    return (
+        <html lang="en">
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <body className={`${oswald.variable} ${poppins.variable} font-poppins font-[200] bg-brand text-gray-600`}>
+            <Header />
             {children}
-        <Footer />
-      </body>
-    </html>
-  );
+            <Footer />
+        </body>
+        </html>
+    );
 }
