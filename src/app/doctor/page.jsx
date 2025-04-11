@@ -5,6 +5,7 @@ import ContentWithBg from '@components/Global/ContentWithBg'
 
 export const metadata = {
     title: "Dr. Konstantinos",
+    description: "Learn about Dr. Konstantinos, the lead dentist at Donti Dental Clinic, and his commitment to providing exceptional dental care."
 }
 
 const Doctor = () => {

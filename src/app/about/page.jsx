@@ -4,7 +4,8 @@ import { DontiContent } from '@data/pages'
 import { LinkPrimary } from '../components/UI/Cta'
 
 export const metadata = {
-    title: "About Us",
+    title: "Why Choose Donti Dental Clinic",
+    description: "Discover the reasons why patients trust Donti Dental Clinic for their dental needs, including our state-of-the-art technology and personalized approach."
 }
 
 const AboutUs = () => {

@@ -4,7 +4,8 @@ import { TreatmentsPageContent, TreatmentsListContent } from '@data/treatments'
 import ContentWithBg from '../components/Global/ContentWithBg'
 
 export const metadata = {
-    title: "Treatments",
+    title: "Our Dental Treatments",
+    description: "Explore the range of dental treatments we offer, from routine hygiene appointments to advanced cosmetic and restorative procedures."
 }
 
 const Treatments = () => {

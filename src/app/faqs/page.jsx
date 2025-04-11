@@ -4,7 +4,8 @@ import ContentWithBg from "../components/Global/ContentWithBg"
 import { Accordion, AccordionItem } from '@szhsin/react-accordion'
 
 export const metadata = {
-    title: "FAQ(s)",
+    title: "Frequently Asked Questions",
+    description: "Find answers to common questions about our dental services, appointment scheduling, and more."
 }
 
 export default function Faqs() {
