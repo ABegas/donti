@@ -115,7 +115,7 @@ export const BookingContent = {
 
 export const PortfolioContent = {
     title: `Real Stories, Real Smiles`,
-    subtitle: `Exceptional dental care with transparent pricing. Discover the perfect treatment plan for your smile.`,
+    subtitle: `Every smile has a story — see how our patients found theirs`,
     bannerImgSrc: '/images/about_2.jpg',
     interviews: [
         {
