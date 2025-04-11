@@ -1,6 +1,6 @@
-const Video = ({videoSrc}) => {
+const Video = ({videoSrc, poster}) => {
     return (
-        <video src={videoSrc} controls playsInline className="absolute top-0 left-0 h-full w-full" />
+        <video src={videoSrc} poster={poster} controls playsInline preload="metadata" className="absolute top-0 left-0 h-full w-full" />
     )
 }
 

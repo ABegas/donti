@@ -123,14 +123,16 @@ export const PortfolioContent = {
             text: `<p>Meet Wiktoria! She wasn’t happy with the shape and shade of her teeth, and came to us looking for a fresh, confident new smile.
                 With composite bonding, we refined the shape and created a brighter, more uniform appearance — in a very white shade personally selected by Wiktoria to match her vision.
                 Her reaction at the end says it all!</p><p><i>Thank you, Wiktoria, for choosing us to be part of your smile story!</i></p>`,
-            videoSrc: '/videos/w.mp4'
+            videoSrc: '/videos/w.mp4',
+            poster: '/videos/w_poster.png'
         },
         {
             name: 'Jalyssia',
             text: `<p>Meet Jalyssia! Her main concern was the chipping on her front three teeth, which affected both the look and feel of her smile.
                 With precise edge bonding on those three teeth, we restored their shape and alignment — carefully matching the shade and following the natural contours of her smile to ensure a seamless blend.
                 The result? A beautifully balanced, natural-looking smile that speaks for itself!</p><p><i>Thank you, Jalyssia, for trusting us with your smile!</i></p>`,
-            videoSrc: '/videos/j.mp4'
+            videoSrc: '/videos/j.mp4',
+            poster: '/videos/j_poster.png'
         },
     ]
 }
