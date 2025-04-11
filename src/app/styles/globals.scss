@@ -1,13 +1,21 @@
 @use 'settings' as *;
 
 html {
-    scroll-padding-top: 150px
+    scroll-padding-top: 150px;
 }
 
 html,
 body {
     @include mq($md) {
         height: calc(100% - 180px);
+    }
+}
+
+body {
+    &:has(.header-dark) {
+        header:not(.is-sticky) {
+            background-color: #3b3b3b;
+        }
     }
 }
 
@@ -326,6 +334,7 @@ p {
 
     li ul {
         list-style-type: disc;
+        list-style-position: inside;
         margin-bottom: 24px;
 
         li {

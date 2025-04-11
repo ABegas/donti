@@ -3,9 +3,6 @@ import { v4 as uuidv4 } from 'uuid'
 export const FaqsContent = {
     title: `Frequently Asked Questions`,
     subtitle: `Everything You Want to Know Before Your Visit`,
-    text: `We also offer 12 months of 0% APR finance, making your dream smile more affordable than ever!
-            Our financing is easy to apply for, with a quick and simple eligibility check that only requires a light
-            credit check—so you can get started on your journey to a confident smile without any hassle`,
     bannerImgSrc: '/images/faqs_banner.jpeg',
     imgAlt: 'Book your appointment',
 }
@@ -62,16 +59,17 @@ export const FaqsListContent = [
                         options available.`
             },
             { 
-                question: "9. What measures do you take for anxious patients?",
-                answer: `We understand dental anxiety is common. Our clinic is designed to be a calm, welcoming
-                        space, and our team takes extra care to ensure you're comfortable.`
+                question: "9. What is your policy for rescheduling or canceling an appointment?",
+                answer: `We kindly ask that you provide at least 48 hours' notice if you need to cancel or reschedule your
+                        appointment. This allows us to offer the time slot to another patient in need. Failure to give 48
+                        hours' notice may result in a cancellation fee.`
             },
             ,
             { 
                 question: "10. Do you offer cosmetic dentistry services?",
-                answer: `Yes, we offer a full range of cosmetic treatments including teeth whitening, composite
-                        bonding, Invisalign, and porcelain veneers – all tailored to help you achieve a confident
-                        smile.`
+                answer: `Yes, we offer a full range of cosmetic treatments, including teeth whitening, composite bonding,
+                        Invisalign, and porcelain veneers. Each treatment is tailored to your needs, and we’ll discuss your
+                        options in a consultation to ensure the best fit for you.`
             },
         ],
         isOpen: true
@@ -109,10 +107,8 @@ export const FaqsListContent = [
             },
             { 
                 question: "6. Is composite bonding reversible?",
-                answer: `Composite bonding is not considered reversible. The process involves etching the enamel to help
-                        the material bond securely to the tooth, and this permanently alters the surface. However, it is very
-                        minimally invasive compared to other cosmetic treatments and can be modified or replaced if
-                        needed in the future.`
+                answer: `In most cases, composite bonding can be completed in one or two visits, depending on the number
+                        of teeth treated and the complexity of the procedure.`
             },
             { 
                 question: "7. Can I whiten bonded teeth?",
@@ -126,9 +122,9 @@ export const FaqsListContent = [
             },
             { 
                 question: "9. Is composite bonding suitable for everyone?",
-                answer: `While bonding is a great option for many people, it may not be suitable for those with extensive
-                        dental damage or teeth misalignment. We’ll assess your smile and recommend the best solution for
-                        your needs.`
+                answer: `While composite bonding is a great option for many people, it may not be suitable for those with
+                        extensive dental damage or misalignment. A full consultation will help us assess your smile and
+                        recommend the most suitable solution for your needs.`
             },
             { 
                 question: "10. How much does composite bonding cost?",
@@ -165,7 +161,8 @@ export const FaqsListContent = [
                 question: "4. Are veneers painful to get?",
                 answer: `Getting veneers is typically not painful. We use local anaesthetic during the preparation phase (if
                         needed) to ensure you're completely comfortable. Ultra-thin veneers may not require any
-                        anaesthetic at all, depending on the case.`
+                        anaesthetic at all, depending on the case. Some mild discomfort or sensitivity may occur after the
+                        procedure, but it usually subsides within a few days.`
             },
             { 
                 question: "5. How long do veneers last?",
@@ -243,8 +240,8 @@ export const FaqsListContent = [
             { 
                 question: "7. Is Invisalign suitable for everyone?",
                 answer: `Invisalign can treat most mild to moderate alignment issues, including gaps, crowding, and bite
-                        problems. We’ll assess your teeth during your consultation to determine if Invisalign is the right
-                        choice for you.`
+                        problems. However, treatment suitability depends on individual cases, and we will assess your
+                        needs during your consultation to determine if Invisalign is the right choice for you.`
             },
             { 
                 question: "8. How do I clean my aligners?",
@@ -258,9 +255,10 @@ export const FaqsListContent = [
             },
             { 
                 question: "10. How much does Invisalign cost?",
-                answer: `The cost of Invisalign varies depending on the complexity of your case. At Donti Dental Clinic, we
-                        offer free initial video consultations and flexible payment plans. We also run regular promotions, so
-                        contact us to learn about our current offers.`
+                answer: `The cost of Invisalign varies depending on the complexity of your case. After your consultation,
+                        we’ll provide a personalised treatment plan and a more accurate quote. We also offer free initial
+                        video consultations, flexible payment plans, and run regular promotions, so contact us to learn about
+                        our current offers.`
             },
         ]
     },
@@ -276,9 +274,9 @@ export const FaqsListContent = [
             },
             { 
                 question: "2. Who is a suitable candidate for dental implants?",
-                answer: `Most healthy adults with one or more missing teeth can be candidates for implants. You’ll need to
-                        have good oral health and enough bone in the jaw to support the implant. If bone loss is an issue,
-                        bone grafting may be recommended.`
+                answer: `Most healthy adults with one or more missing teeth can be candidates for implants. During your
+                        consultation, we will assess your oral health, bone density, and any other factors that might affect
+                        suitability. If bone loss is an issue, bone grafting may be recommended.`
             },
             { 
                 question: "3. What are the benefits of dental implants?",
@@ -288,9 +286,9 @@ export const FaqsListContent = [
             },
             { 
                 question: "4. How long does the dental implant process take?",
-                answer: `The process typically takes several months and involves multiple stages: consultation, implant
-                        placement, healing time (usually 3–6 months), and the final crown fitting. In some cases, same-day
-                        implants may be possible.`
+                answer: `The process typically takes several months, but treatment time may vary depending on your specific
+                        case. Some patients may be eligible for same-day implants, while others may require additional
+                        procedures, like bone grafting.`
             },
             { 
                 question: "5. Is getting a dental implant painful?",
@@ -316,15 +314,18 @@ export const FaqsListContent = [
             },
             { 
                 question: "9. Are there risks or complications with implants?",
-                answer: `As with any surgical procedure, there are some risks — such as infection, implant failure, or nerve
-                        damage — but these are rare. We perform a thorough assessment and use advanced techniques to
-                        ensure the highest standard of care.`
+                answer: `As with any surgical procedure, dental implants carry some risks, including infection, implant
+                        failure, or nerve damage. However, these complications are rare. During your consultation, we will
+                        thoroughly assess your case to ensure you're fully informed of the risks and to discuss all treatment
+                        options. We use advanced techniques to minimise complications and ensure the highest standard of
+                        care.`
             },
             { 
                 question: "10. How much do dental implants cost?",
-                answer: `The cost depends on the number of implants needed, any additional treatments (like bone grafting),
-                        and the final restoration. At Donti Dental Clinic, we offer tailored treatment plans, flexible finance
-                        options, and occasional implant offers — contact us to find out about current pricing.`
+                answer: `The cost of dental implants depends on the number of implants needed, any additional treatments
+                        (such as bone grafting), and the final restoration. After a consultation, we’ll provide a tailored
+                        treatment plan with an accurate cost estimate. We also offer flexible finance options and occasional
+                        promotions, so contact us to learn about current pricing.`
             },
         ]
     },
@@ -350,8 +351,9 @@ export const FaqsListContent = [
             },
             { 
                 question: "3. Is teeth whitening safe?",
-                answer: `Yes, when done under the supervision of a dental professional, both Zoom and Boutique whitening
-                        are completely safe. We assess your oral health beforehand to ensure whitening is suitable for you.`
+                answer: `Teeth whitening is generally safe when carried out by a dental professional. However, a full
+                        consultation and assessment of your oral health are required before proceeding, as whitening may
+                        not be suitable for everyone.`
             },
             { 
                 question: "4. Will whitening make my teeth sensitive?",
@@ -360,10 +362,9 @@ export const FaqsListContent = [
                         needed.`
             },
             { 
-                question: "5. How white will my teeth get?",
-                answer: `Results vary based on your natural tooth colour and the type of staining. Most patients see their
-                        teeth lighten by several shades, achieving a visibly brighter smile. We’ll discuss expected results
-                        with you during your consultation.`
+                question: "5 How white will my teeth get?",
+                answer: `The degree of whitening will vary depending on your tooth structure and the type of staining. Your
+                        dentist will discuss expected results and assess what is achievable during your consultation.`
             },
             { 
                 question: "6. How long do results last?",

@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Copyright, FooterUtitlityLinks } from "@data/footer"
+import { Copyright } from "@data/footer"
+import { ServiceLinksContent } from "@data/common"
 
 const FooterBottom = () => {
     return (
@@ -9,9 +10,9 @@ const FooterBottom = () => {
                     {Copyright.text}
                 </div>
                 <ul className="flex text-center">
-                    {FooterUtitlityLinks.map(link => (
+                    {ServiceLinksContent.map(link => (
                         <li key={link.id} className="border-l-1 px-4 first:border-0">
-                            <Link href={link.url} className="hover:text-brand transition">{link.text}</Link>
+                            <Link href={link.url} className="hover:underline">{link.text}</Link>
                         </li>
                     ))}
                 </ul>

@@ -116,9 +116,21 @@ export const BookingContent = {
 export const PortfolioContent = {
     title: `Real Stories, Real Smiles`,
     subtitle: `Exceptional dental care with transparent pricing. Discover the perfect treatment plan for your smile.`,
-    text: `We also offer 12 months of 0% APR finance, making your dream smile more affordable than ever!
-            Our financing is easy to apply for, with a quick and simple eligibility check that only requires a light
-            credit check—so you can get started on your journey to a confident smile without any hassle`,
     bannerImgSrc: '/images/about_2.jpg',
-    imgAlt: 'Book your appointment',
+    interviews: [
+        {
+            name: 'Wiktoria',
+            text: `<p>Meet Wiktoria! She wasn’t happy with the shape and shade of her teeth, and came to us looking for a fresh, confident new smile.
+                With composite bonding, we refined the shape and created a brighter, more uniform appearance — in a very white shade personally selected by Wiktoria to match her vision.
+                Her reaction at the end says it all!</p><p><i>Thank you, Wiktoria, for choosing us to be part of your smile story!</i></p>`,
+            videoSrc: '/videos/w.mp4'
+        },
+        {
+            name: 'Jalyssia',
+            text: `<p>Meet Jalyssia! Her main concern was the chipping on her front three teeth, which affected both the look and feel of her smile.
+                With precise edge bonding on those three teeth, we restored their shape and alignment — carefully matching the shade and following the natural contours of her smile to ensure a seamless blend.
+                The result? A beautifully balanced, natural-looking smile that speaks for itself!</p><p><i>Thank you, Jalyssia, for trusting us with your smile!</i></p>`,
+            videoSrc: '/videos/j.mp4'
+        },
+    ]
 }
