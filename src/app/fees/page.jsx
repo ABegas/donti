@@ -43,7 +43,7 @@ export default function FeesSection() {
                         <p className="text-gray-600 mt-4">Transparent pricing, premium care.</p>
                     </div>
             
-                    <div className="grid md:grid-cols-3 gap-6 max-w-[1200px] mx-auto">
+                    <div className="grid md:grid-cols-3 gap-5">
                     {PackagesListContent.map((pkg, index) => (
                         <div
                             key={index}
@@ -51,12 +51,13 @@ export default function FeesSection() {
                         >
                             <div>
                                 <h3 className="flex items-center justify-center bg-brand-dark p-6 text-brand text-center md:h-[125px] rounded-[16px_16px_0_0]">{pkg.title}</h3>
-                                <h4 className="text-gray-500 mt-4 px-6">{pkg.services}</h4>
+                                <h4 dangerouslySetInnerHTML={{__html: pkg.services}} className="text-gray-500 mt-4 px-6" />
                             </div>
                             <div className="p-6">
                                 <p className="o-decor o-decor--center text-sm">{pkg.description}</p>
-                                <div className="mt-6 text-center">
-                                    <span className="text-2xl font-bold">{pkg.price}</span>
+                                <div className="mt-6 text-center text-2xl font-bold">
+                                    {pkg.price}
+                                    <span className="text-[16px] font-[100] translate-y-[-8px] inline-block">*</span>
                                 </div>
                             </div>
                         </div>
@@ -64,6 +65,7 @@ export default function FeesSection() {
                     </div>
                 </section>
                 <h4 className=" relative max-w-[900px] text-center px-8 mx-auto my-22 before:absolute before:w-[70%] before:top-[-60px] before:translate-[-50%] before:left-[50%] before:h-[2px] before:bg-gray-600">{FeesContent.text}</h4>
+                <p className="mt-20 text-[14px]"><span className="text-[16px] font-[100] inline-block">*</span> - {FeesContent.notation}</p>
             </ContentWithBg>
         </>
     );
