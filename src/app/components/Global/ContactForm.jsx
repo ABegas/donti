@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link"
 import { useState } from 'react'
 import Spinner from '@public/icons/spinner.svg'
 import { ButtonPrimary } from '../UI/Cta'
@@ -24,12 +25,13 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
     
-        //if (!form.agree) {
-          //  alert('You must agree to the privacy policy.')
-            //return
-        //}
+        if (!form.agree) {
+            alert('You must agree to the privacy policy.')
+            return
+        }
     
         setOverlayShow(true)
+        
         const res = await fetch('/api/contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -154,8 +156,7 @@ const ContactForm = () => {
                             </select>
                         </div>
 
-                        {/* Privacy Policy Agreement 
-                        <div className="mb-6 flex items-center space-x-2">
+                        <div className="mb-6 flex space-x-2">
                         <input
                             type="checkbox"
                             name="agree"
@@ -166,9 +167,9 @@ const ContactForm = () => {
                             className="accent-[#c7caa8] w-4 h-4"
                         />
                         <label htmlFor="agree" className="text-sm">
-                            I agree to the <a href="/privacy-policy" className="underline">privacy policy</a>.
+                            By submitting your details you are agreeing to our <Link href="/privacy-policy" target="_blank" className="underline">privacy policy</Link>.
                         </label>
-                        </div>*/}
+                        </div>
 
                         {/* Submit */}
                         <ButtonPrimary text="Send" type="submit" style="w-full" />

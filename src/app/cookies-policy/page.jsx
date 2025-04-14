@@ -2,10 +2,10 @@ import { ServiceLinksContent } from "@data/common"
 import ServiceContent from "@components/Global/ServiceContent"
 
 export const metadata = {
-    title: "Privacy Policy",
+    title: "Cookies Policy",
 }
 
-export default function PrivacyPolicy() {
+export default function CookiesPolicy() {
     return (
         <ServiceContent data={ServiceLinksContent} />
     )

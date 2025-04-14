@@ -4,9 +4,9 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req) {
   const body = await req.json();
-  const { fullName, email, phone, treatment } = body;
+  const { fullName, email, phone, treatment, agree } = body;
 
-  if (!fullName || !email || !phone || !treatment ) {
+  if (!fullName || !email || !phone || !treatment || !agree ) {
     return Response.json({ success: false, error: 'All fields are required.' }, { status: 400 });
   }
 
@@ -21,6 +21,7 @@ export async function POST(req) {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
         <p><strong>Treatment:</strong> ${treatment}</p>
+        <p><strong>Agreed to Privacy Policy:</strong> Yes</p>
       `
     });
 
