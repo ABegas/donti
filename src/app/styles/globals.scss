@@ -61,6 +61,11 @@ h4, .title-h4 {
     }
 }
 
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
 p {
     margin-bottom: 16px;
 }
@@ -324,11 +329,13 @@ p {
     }
 }
 
-.o-content {
+.o-content,
+.o-privacies {
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    h5 {
         margin-bottom: 24px;
     }
 
@@ -342,6 +349,18 @@ p {
             margin-bottom: 10px;
         }
     }
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.o-privacies {
+    font-size: 16px;
 }
 
 .szh-accordion {

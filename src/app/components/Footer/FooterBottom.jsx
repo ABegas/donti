@@ -12,7 +12,7 @@ const FooterBottom = () => {
                 <ul className="flex text-center">
                     {ServiceLinksContent.map(link => (
                         <li key={link.id} className="border-l-1 px-4 first:border-0">
-                            <Link href={link.url} className="hover:underline">{link.text}</Link>
+                            <Link href={link.url} className="hover:underline">{link.title}</Link>
                         </li>
                     ))}
                 </ul>
