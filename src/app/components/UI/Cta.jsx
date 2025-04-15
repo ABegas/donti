@@ -31,6 +31,7 @@ export const LinkPrimaryArrow = ({text, link, style, iconPosition = "right"}) =>
                     'translate-x-2 md:translate-y-[2px] group-hover:translate-x-3'}
                 w-[15px]
                 transition-transform
+                no-underline
             `}
         />
     </Link>         

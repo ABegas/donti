@@ -336,81 +336,25 @@ export const ServiceLinksContent = [
         dateStart: '5th of April 2025',
         dateUpdate: '12th of April 2025',
         text: `
+            <p>At Donti Dental Clinic, we do <strong>not use cookies</strong> for analytics, advertising, or any form of user tracking on our website.</p>
+            <p>However, certain <strong>third-party services</strong> embedded on our website—such as <strong>Google Maps, social media plugins</strong>, and <strong>WhatsApp chat integration—may set cookies</strong> on your device. These cookies are managed and controlled solely by the respective third parties, and we do <strong>not have access to or control over them.</strong></p>
+            <h4>Third-Party Services That May Use Cookies</h4>
             <ul>
-                <li>
-                    <h4>1. What Are Cookies?</h4>
-                    <p>Cookies are small text files stored on your device (computer, tablet, or mobile) when you
-                        visit a website. They help us understand user behaviour, improve functionality, and offer a
-                        personalised experience.</p>
-                    <p>Cookies can be:</p>
-                    <ul>
-                        <li>Session cookies: Deleted when you close your browser</li>
-                        <li>Persistent cookies: Remain on your device until they expire or you delete them</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>2. Types of Cookies We Use</h4>
-                    <p>a) Strictly Necessary Cookies</p>
-                    <p>These cookies are essential for the operation of our website and cannot be switched
-                    off in our systems. They are typically only set in response to actions made by you (e.g.,
-                    cookie preferences or form submissions).</p>
-                    <p>Examples:</p>
-                    <ul>
-                        <li>Session management</li>
-                        <li>Consent tracking</li>
-                    </ul>
-                    <p>b) Analytics/Performance Cookies</p>
-                    <p>These cookies help us understand how visitors use our site so we can measure and
-                        improve performance. All data collected is anonymised.</p>
-                    <p>We use:</p>
-                    <ul>
-                        <li>Google Analytics: Tracks page visits, time on site, and user interaction</li>
-                    </ul>
-                
-                    <p>c) Functionality Cookies</p>
-                    <p>These cookies allow the website to remember choices you make (e.g., your location or
-                        language) and provide enhanced, more personal features.</p>
-                
-                    <p>d) Marketing/Third-Party Cookies</p>
-                    <p>We do not currently use advertising cookies. However, third-party services (such as
-                        embedded YouTube videos or Google Maps) may set cookies governed by their own
-                        policies. If we introduce any marketing cookies in the future, we will request your explicit
-                        consent.</p>
-                </li>
-                <li>
-                    <h4>3. Cookies We Use (Examples)</h4>
-                    <p>_ga, _gid, _gat - Google Analytics - site usage tracking - Up to 2 years - Analytics</p>
-                    <p>cookie_notice_accepted - Records your cookie consent decision - 30 days - Strictly Necessary</p>
-                </li>
-                <li>
-                    <h4>4. Managing Your Cookie Preferences</h4>
-                    <p>When you first visit our Website, a cookie consent banner appears allowing you to:</p>
-                    <ul>
-                        <li>Accept all cookies</li>
-                        <li>Reject non-essential cookies</li>
-                        <li>Customise your preferences</li>
-                    </ul>
-                    <p>You can also manage cookies via your browser settings. For more guidance, visit: <a href="https://www.aboutcookies.org" target="_blank">https://www.aboutcookies.org</a></p>
-                    <p>Please note: Blocking some types of cookies may impact your user experience on our site.</p>
-                </li>
-                <li>
-                    <h4>5. Updates to This Policy</h4>
-                    <p>We may update this Cookies Policy from time to time to reflect changes in regulations,
-                        technology, or our business practices. We encourage you to revisit this page periodically.</p>
-                </li>
-                <li>
-                    <h4>6. Contact Us</h4>
-                    <p>If you have any questions about this Cookies Policy or how we use cookies, please contact:</p>
-                    <p>
-                        Donti Dental Clinic<br/>
-                        Address: King William 1, City of London, EC4N 7AR, UK
-                    </p>
-                    <ul>
-                        <li><strong>Email: <a href="mailto:info@dontidentalclinic.co.uk" target="_blank">info@dontidentalclinic.co.uk</a></strong></li>
-                        <li><strong>Phone: <a href="tel:020 3576 9700" target="_blank">020 3576 9700</a></strong></li>
-                        <li><strong>Website: <a href="https://dontidentalclinic.co.uk" target="_blank">www.dontidentalclinic.co.uk</a></strong></li>
-                    </ul>
-                </li>
+                <li><strong>Google Maps</strong> – Displays our clinic’s location</li>
+                <li><strong>Social Media Plugins</strong> – Includes buttons or feeds from platforms like Facebook and Instagram</li>
+                <li><strong>WhatsApp</strong> – Chat or contact widgets may allow WhatsApp to set cookies or process user data</li>
+            </ul>
+            <p>These services may collect data according to their own privacy and cookie policies. We recommend reviewing those directly on the third-party providers' websites.</p>
+            <h4>Managing Cookies</h4>
+            <p>You can manage or disable cookies via your browser settings. For more information on how to control or delete cookies, visit: <a href="https://www.aboutcookies.org" target="_blank">https://www.aboutcookies.org</a></p>
+            <h5>Contact Us</h5>
+            <p>If you have any questions about this Cookies Policy, please contact:</p>
+            <h5>Donti Dental Clinic</h5>
+            <ul>
+                <li><strong>Address: King William 1, City of London, EC4N 7AR, UK</strong></li>
+                <li><strong>Email: <a href="mailto:info@dontidentalclinic.co.uk" target="_blank">info@dontidentalclinic.co.uk</a></strong></li>
+                <li><strong>Phone: <a href="tel:020 3576 9700" target="_blank">020 3576 9700</a></strong></li>
+                <li><strong>Website: <a href="https://dontidentalclinic.co.uk" target="_blank">www.dontidentalclinic.co.uk</a></strong></li>
             </ul>
         `
     }
