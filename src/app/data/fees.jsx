@@ -77,6 +77,16 @@ export const PriceListContent = [
     },
     {
         id: uuidv4(),
+        title: "Extractions",
+        items: [
+            { name: "Routine Extraction", price: "£250" },
+            { name: "Surgical/Complex Extraction", price: "£475" },
+            { name: "Wisdom Tooth Extraction", price: "From £575" },
+            { name: "Extraction with Socket Preservation", price: "£875" }
+        ]
+    },
+    {
+        id: uuidv4(),
         title: "Invisalign Clear Aligners",
         items: [
             { name: "Please inquire for discounts on smile makeovers", price: "From £3,500" }
