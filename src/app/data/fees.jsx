@@ -36,8 +36,8 @@ export const PriceListContent = [
         id: uuidv4(),
         title: "Hygiene Services",
         items: [
-            { name: "Standard Hygiene Session (Scaling and Polishing)", price: "£100" },
-            { name: "Hygiene Session with Air Flow Polishing", price: "£125" },
+            { name: "Standard Hygiene Session (Scaling and Polishing)", price: "£120" },
+            { name: "Hygiene Session with Air Flow Polishing", price: "£150" },
             { name: "Composite Maintenance Session", price: "£190" },
             { name: "Periodontal Scaling and Root Planing by General Dental Practitioner (per quadrant)", price: "From £125" }
         ]
